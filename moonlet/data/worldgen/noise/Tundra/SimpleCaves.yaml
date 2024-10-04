@@ -1,0 +1,110 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Filter
+    name: RidgedMultiFractal
+  source0:
+    type: Primitive
+    name: MainNoise
+- target:
+    type: Modifier
+    name: MainScaler
+  source0:
+    type: Filter
+    name: RidgedMultiFractal
+- target:
+    type: Modifier
+    name: Invert_5jl7bRSe
+  source0:
+    type: Modifier
+    name: MainScaler
+- target:
+    type: Combiner
+    name: Add_F6Sje1Rs
+  source0:
+    type: Modifier
+    name: Invert_5jl7bRSe
+  source1:
+    type: Primitive
+    name: Constant_ipUDg14a
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Combiner
+    name: Add_F6Sje1Rs
+primitives:
+  MainNoise:
+    primative: SimplexPerlin
+    quality: Standard
+    seed: 0
+    offset: 1
+    name: MainNoise
+    pos:
+      X: 115.66666666666652
+      Y: 266.04000000000002
+  Constant_ipUDg14a:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: Constant_ipUDg14a
+    pos:
+      X: 1474.8898524488709
+      Y: 1028.9292417445556
+filters:
+  RidgedMultiFractal:
+    filter: RidgedMultiFractal
+    frequency: 2
+    lacunarity: 4
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: RidgedMultiFractal
+    pos:
+      X: 447.26230821518368
+      Y: 247.03999999999999
+transformers: {}
+selectors: {}
+modifiers:
+  MainScaler:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.300000012
+      Y: 0.300000012
+    name: MainScaler
+    pos:
+      X: 1072.3271419917248
+      Y: 543.67666547027625
+  Invert_5jl7bRSe:
+    modifyType: Invert
+    scale2d:
+      X: 0
+      Y: 0
+    name: Invert_5jl7bRSe
+    pos:
+      X: 1533.3069258761629
+      Y: 716.81974347207597
+combiners:
+  Add_F6Sje1Rs:
+    combineType: Add
+    name: Add_F6Sje1Rs
+    pos:
+      X: 1938.2568185161899
+      Y: 900.76965866729631
+floats: {}
+controlpoints: {}

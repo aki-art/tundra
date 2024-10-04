@@ -1,0 +1,9 @@
+name: Trash Pits
+description: Piles of trash were left behind on this world.
+colorHex: 6b603b
+
+traitTags:
+  - Geodes
+
+globalFeatureMods:
+  features/tundra/traits/TrashCavesSmall: 20 # Argon, Trash, Broken Glass, Refined Aluminum, Obsidian, Toxic Sludge 

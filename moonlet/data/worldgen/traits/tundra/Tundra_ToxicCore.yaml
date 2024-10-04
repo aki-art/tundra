@@ -1,0 +1,21 @@
+name: Toxic Core
+description: The core of this planetoid is submerged in toxic waste materials.
+colorHex: 447c13
+
+exclusiveWithTags:
+  - CoreTrait
+  
+traitTags:
+  - Core
+
+additionalSubworldFiles:
+  - name: subworlds/tundratoxic/JunkPit
+
+additionalUnknownCellFilters:
+  - tagcommand: DistanceFromTag
+    tag: AtDepths
+    minDistance: 0
+    maxDistance: 0
+    command: Replace
+    subworldNames:
+      - subworlds/tundratoxic/JunkPit

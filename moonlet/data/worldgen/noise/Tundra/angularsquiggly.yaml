@@ -1,0 +1,74 @@
+test:
+  X: 5
+  Y: 2
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Filter
+    name: RidgedMultiFractal_zub/GWeb
+  source0:
+    type: Primitive
+    name: SimplexPerlin_RyU7DY0L
+- target:
+    type: Modifier
+    name: Scale2D_F7/KsMpQ
+  source0:
+    type: Filter
+    name: RidgedMultiFractal_zub/GWeb
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Modifier
+    name: Scale2D_F7/KsMpQ
+primitives:
+  SimplexPerlin_RyU7DY0L:
+    primative: SimplexPerlin
+    quality: Standard
+    seed: 0
+    offset: 1
+    name: SimplexPerlin_RyU7DY0L
+    pos:
+      X: 115.66666666666652
+      Y: 266.04000000000002
+filters:
+  RidgedMultiFractal_zub/GWeb:
+    filter: RidgedMultiFractal
+    frequency: 3
+    lacunarity: 3
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: RidgedMultiFractal_zub/GWeb
+    pos:
+      X: 511.66666666666652
+      Y: 285.04000000000002
+transformers: {}
+selectors: {}
+modifiers:
+  Scale2D_F7/KsMpQ:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.200000003
+      Y: 0.200000003
+    name: Scale2D_F7/KsMpQ
+    pos:
+      X: 924.66666666666652
+      Y: 468.04000000000002
+combiners: {}
+floats: {}
+controlpoints: {}

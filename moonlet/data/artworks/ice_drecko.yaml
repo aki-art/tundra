@@ -1,0 +1,12 @@
+# example of adding an option to an existing statue type (ice sculpture)
+id: Tundra_IceDrecko
+name: "Frosty Drecko"
+description: "WARNING: Duplicants are advised against hugging this fluffy creature against all temptation, at the risk of getting stuck to it."
+buildingId: IceSculpture
+
+quality: Okay
+bonusDecor: 15
+
+animation: 
+  file: tundra_icesculpture_icedrecko_kanim
+  defaultAnimation: idle

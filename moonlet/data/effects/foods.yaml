@@ -1,0 +1,13 @@
+effects:
+ - id: Tundra_MinorOxygenBuff
+   name: Lichen Breath
+   tooltip: This duplicant has been submerged in acidic Toxic Sludge.
+   atmoSuitImmunity: false
+   durationSeconds: 600 # _Cycle_
+   isBad: false
+   triggerFloatingText: true
+   showInUI: true
+   modifiers:
+    - id: AirConsumptionRate
+      value: -0.03 # -5/_Cycle_ # -5% per cycle
+      isMultiplier: true

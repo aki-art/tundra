@@ -1,0 +1,128 @@
+settings:
+  zoom: 0.1
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Combiner
+    name: Chonkify
+  source0:
+    type: Filter
+    name: Spaghet
+  source1:
+    type: Primitive
+    name: ChonkFactor
+- target:
+    type: Filter
+    name: Spaghet
+  source0:
+    type: Primitive
+    name: SimplexPerlin
+- target:
+    type: Filter
+    name: Billow
+  source0:
+    type: Modifier
+    name: Scale
+- target:
+    type: Modifier
+    name: Scale
+  source0:
+    type: Combiner
+    name: Chonkify
+- target:
+    type: Transformer
+    name: Rotate
+  source0:
+    type: Filter
+    name: Billow
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Transformer
+    name: Rotate
+primitives:
+  SimplexPerlin:
+    primative: SimplexPerlin
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: SimplexPerlin
+    pos:
+      X: -598.3333333
+      Y: 110.04
+  ChonkFactor:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 0.1
+    name: ChonkFactor
+    pos:
+      X: -260.37031522367351
+      Y: 606.89155443282516
+filters:
+  Spaghet:
+    filter: RidgedMultiFractal
+    frequency: 1
+    lacunarity: 1
+    octaves: 1
+    offset: 1
+    gain: 2
+    exponent: 1
+    name: Spaghet
+    pos:
+      X: -266.91
+      Y: 90.98
+  Billow:
+    filter: Billow
+    frequency: 1
+    lacunarity: 3
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: Billow
+    pos:
+      X: 759.79108225687287
+      Y: 606.02048631616969
+transformers:
+  Rotate:
+    transformerType: RotatePoint
+    rotation:
+      X: 0
+      Y: -30
+    name: Rotate
+    pos:
+      X: 1021.2192492687745
+      Y: 534.49768590725319
+selectors: {}
+modifiers:
+  Scale:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.300000012
+      Y: 2
+    name: Scale
+    pos:
+      X: 420.67435618011348
+      Y: 302.66516044386856
+combiners:
+  Chonkify:
+    combineType: Add
+    name: Chonkify
+    pos:
+      X: 155.63394584636785
+      Y: 339.90396919374763
+floats: {}
+controlpoints: {}

@@ -1,0 +1,167 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Filter
+    name: RidgedMultiFractal
+  source0:
+    type: Primitive
+    name: MainNoise
+- target:
+    type: Modifier
+    name: MainScaler
+  source0:
+    type: Filter
+    name: RidgedMultiFractal
+- target:
+    type: Modifier
+    name: Scale2D_G9xkfou9
+  source0:
+    type: Primitive
+    name: BevinsValue_HBCzCNUN
+- target:
+    type: Transformer
+    name: Displace_aruY6S4Q
+  source0:
+    type: Modifier
+    name: MainScaler
+- target:
+    type: Combiner
+    name: Add_KwMWGWd1
+  source0:
+    type: Modifier
+    name: Scale2D_G9xkfou9
+  source1:
+    type: Primitive
+    name: Constant_/bQPFerF
+- target:
+    type: Combiner
+    name: Multiply_C08hdouz
+  source0:
+    type: Combiner
+    name: Add_KwMWGWd1
+  source1:
+    type: Primitive
+    name: Constant_S1mQ4ctE
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Combiner
+    name: Multiply_C08hdouz
+primitives:
+  MainNoise:
+    primative: SimplexPerlin
+    quality: Standard
+    seed: 0
+    offset: 1
+    name: MainNoise
+    pos:
+      X: 115.66666666666652
+      Y: 266.04000000000002
+  VerticalOffsetNoise:
+    primative: SimplexPerlin
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: VerticalOffsetNoise
+    pos:
+      X: 170.89117293001175
+      Y: 1095.1535633804385
+  BevinsValue_HBCzCNUN:
+    primative: BevinsValue
+    quality: Best
+    seed: 0
+    offset: 1
+    name: BevinsValue_HBCzCNUN
+    pos:
+      X: 703.79531699436802
+      Y: 1048.7518219094786
+  Constant_/bQPFerF:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: Constant_/bQPFerF
+    pos:
+      X: 1277.1847468873116
+      Y: 1490.113306419476
+  Constant_S1mQ4ctE:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 0.5
+    name: Constant_S1mQ4ctE
+    pos:
+      X: 1574.9449955806817
+      Y: 1514.6125673879178
+filters:
+  RidgedMultiFractal:
+    filter: RidgedMultiFractal
+    frequency: 2
+    lacunarity: 4
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: RidgedMultiFractal
+    pos:
+      X: 447.26230821518368
+      Y: 247.03999999999999
+transformers:
+  Displace_aruY6S4Q:
+    transformerType: Displace
+    rotation:
+      X: 0
+      Y: 0
+    name: Displace_aruY6S4Q
+    pos:
+      X: 1325.3037895132284
+      Y: 480.55974629488242
+selectors: {}
+modifiers:
+  MainScaler:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.100000001
+      Y: 0.899999976
+    name: MainScaler
+    pos:
+      X: 1043.7409318414118
+      Y: 543.67666547027625
+  Scale2D_G9xkfou9:
+    modifyType: Scale2d
+    scale2d:
+      X: 2
+      Y: 2
+    name: Scale2D_G9xkfou9
+    pos:
+      X: 960.14670400824025
+      Y: 1143.6470682816257
+combiners:
+  Add_KwMWGWd1:
+    combineType: Add
+    name: Add_KwMWGWd1
+    pos:
+      X: 1559.8685272924099
+      Y: 1198.9490126022247
+  Multiply_C08hdouz:
+    combineType: Multiply
+    name: Multiply_C08hdouz
+    pos:
+      X: 1898.1467845105112
+      Y: 1218.7368772305813
+floats: {}
+controlpoints: {}

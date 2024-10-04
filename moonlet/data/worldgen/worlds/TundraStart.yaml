@@ -1,0 +1,156 @@
+name: Tundra
+description: "..."
+disableWorldTraits: true
+nameTables: [ TUNDRA ]
+asteroidIcon: asteroid_vanilla_mediumforestywasteland_kanim
+
+worldsize:
+  X: 128
+  Y: 96
+
+layoutMethod: PowerTree
+
+defaultsOverrides:
+  data:
+    OverworldAvoidRadius: 5
+    OverworldSampleBehaviour: PoissonDisk
+    OverworldDensityMin: 17
+    OverworldDensityMax: 20
+    OverworldMinNodes: 1
+  startingWorldElements: [] # remove the algae check
+
+startSubworldName: subworlds/sandstone/SandstoneStart
+startingBaseTemplate: bases/sandstoneBase
+startingBasePositionHorizontal:
+  min: 0.5
+  max: 0.5
+startingBasePositionVertical:
+  min: 0.6
+  max: 0.6
+
+subworldFiles:
+  - name: subworlds/sandstone/SandstoneStart
+  - name: subworlds/sandstone/Sandstone
+
+unknownCellsAllowedSubworlds: 
+  - tagcommand: Default
+    command: Replace
+    subworldNames:
+      - subworlds/sandstone/Sandstone
+
+#startSubworldName: subworlds/space/Space # subworlds/tundracold/TundraStartMini
+# startingBaseTemplate: tundra/starterBase # bases/sandstoneBase
+# startingBasePositionHorizontal:
+#   min: 0.4
+#   max: 0.5
+# startingBasePositionVertical:
+#   min: 0.55
+#   max: 0.60
+
+# List all the subworld files to load
+# subworldFiles:
+  # - name: subworlds/tundracold/TundraStartMini
+  #   minCount: 1
+  #   overridePower: 1.2
+  # - name: subworlds/tundracold/TundraLakes
+  #   minCount: 1
+  # - name: subworlds/tundracold/TundraMetallic
+  #   minCount: 1
+  # - name: subworlds/tundraicy/IcyCaverns
+  #   minCount: 2
+  # - name: subworlds/tundrabrimstone/Fault
+  #   minCount: 2
+  #   maxCount: 3
+  #   overridePower: 4
+  # - name: subworlds/tundratoxic/JunkPit
+  #   overridePower: 0.7
+  # - name: subworlds/tundraswamp/SlimyWastes
+  #   minCount: 2
+  # - name: subworlds/space/Space
+  # - name: expansion1::subworlds/jungle/JungleSteamy
+  #   minCount: 2
+  # - name: expansion1::subworlds/space/IcySurface
+  # - name: expansion1::subworlds/wasteland/WastelandBeetle
+  #   minCount: 2
+  #   maxCount: 3
+  # - name: expansion1::subworlds/wasteland/WastelandWorm
+  #   minCount: 1
+  #   maxCount: 2
+  
+# unknownCellsAllowedSubworlds: 
+
+# # world filler
+#   - tagcommand: Default
+#     command: Replace
+#     subworldNames:
+#       - subworlds/tundraswamp/SlimyWastes
+#       - subworlds/tundraicy/IcyCaverns
+#       - subworlds/tundrabrimstone/Fault
+#       - expansion1::subworlds/jungle/JungleSteamy
+#       - expansion1::subworlds/wasteland/WastelandBeetle
+#       - expansion1::subworlds/wasteland/WastelandWorm
+
+# # start area
+#   - tagcommand: AtTag
+#     tag: AtStart
+#     command: Replace
+#     subworldNames:
+#       - subworlds/tundracold/TundraStartMini
+
+# # start area
+#   - tagcommand: DistanceFromTag
+#     tag: AtStart
+#     minDistance: 1
+#     maxDistance: 2
+#     command: Replace
+#     subworldNames:
+#       - subworlds/tundracold/TundraLakes
+#       - subworlds/tundracold/TundraMetallic
+#       - subworlds/tundracold/TundraStartMini
+
+# # 2 deep core
+#   - tagcommand: DistanceFromTag
+#     tag: AtDepths
+#     minDistance: 0
+#     maxDistance: 1
+#     command: Replace
+#     subworldNames:
+#       - subworlds/tundratoxic/JunkPit
+
+# # surface
+#   - tagcommand: DistanceFromTag
+#     tag: AtSurface
+#     minDistance: 2
+#     maxDistance: 2
+#     command: Replace
+#     subworldNames:
+#       - expansion1::subworlds/space/IcySurface
+
+# # two tall space
+#   - tagcommand: DistanceFromTag 
+#     tag: AtSurface
+#     minDistance: 0
+#     maxDistance: 1
+#     command: Replace
+#     subworldNames:
+#       - subworlds/space/Space
+
+# worldTemplateRules:
+#   # Gravitas
+#   - names:
+#     - expansion1::poi/warp/sender
+#     - expansion1::poi/warp/receiver
+#     - expansion1::poi/warp/teleporter
+#     listRule: GuaranteeAll
+#     priority: 90
+#     allowedCellsFilter:
+#       - command: Replace
+#         tagcommand: DistanceFromTag
+#         tag: AtStart
+#         minDistance: 1
+#         maxDistance: 3
+#       - command: IntersectWith
+#         zoneTypes: [ BoggyMarsh, Wasteland, ToxicJungle, Tundra_ExtraFrozen]
+#       - command: ExceptWith
+#         tagcommand: AtTag
+#         tag: NoGravitasFeatures

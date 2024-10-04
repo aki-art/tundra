@@ -1,0 +1,20 @@
+remove: [] 
+add:
+  TundraDirty:
+    - element: Tundra_CoarseDirt
+      weight: 10
+    - element: Dirt
+      weight: 4
+    - element: IgneousRock
+      weight: 4
+  TundraSurface:
+    - element: MaficRock
+      weight: 10
+    - element: Cobaltite
+      weight: 4
+  TundraSwamp:
+    - element: SedimentaryRock
+      weight: 10
+    - element: GoldAmalgam
+      weight: 4
+

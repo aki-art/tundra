@@ -1,0 +1,44 @@
+id: Tundra_PropaneGenerator
+name: Propane Generator
+effectTescription: todo
+description: todo
+overlayMode: Power
+
+width: 3
+height: 3
+
+animation:
+  file: tundra_propanegenerator_kanim
+
+materials:
+  - material: Metal
+    mass: 300
+
+category: Power
+subCategory: temperature
+neighbor: HydrogenGenerator
+tech: PrettyGoodConductors
+buildLocationRule: OnFloor
+
+exhaustKilowattsWhenActive: 2
+selfHeatKilowattsWhenActive: 2
+
+conduitIn: 
+  type: Gas
+  x: 0
+  y: 1
+
+powerOutlet: 
+  x: 1
+  y: 0
+
+generator:
+  wattage: 800
+  baseCapacity: 1000
+
+# behavior
+components:
+  - !!simpleGenerator
+    input: Propane
+    inputMassRate: 0.1
+    MaxStoredInputKg: 2

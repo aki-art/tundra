@@ -1,0 +1,41 @@
+MobLookupTable:
+  remove: [] 
+  add:
+
+    Tundra_Icy_Wheezewort:
+      prefabName: ColdBreather
+      location: Floor
+      selectMethod: Centroid
+      density:
+        min: 0.05
+        max: 0.1
+      width: 1
+      height: 2
+
+    Tundra_Icicle:
+      location: Ceiling
+      selectMethod: Centroid
+      density:
+        min: 0.3
+        max: 0.7
+      width: 1
+      height: 2
+
+    Tundra_LotsOfMuckroot:
+      prefabName: BasicForagePlantPlanted
+      location: Floor
+      selectMethod: Centroid
+      density:
+        min: 0.2
+        max: 0.5
+      width: 1
+      height: 1
+      
+    Tundra_BlueFlower:
+      location: Floor
+      selectMethod: Centroid
+      density:
+        min: 0.1
+        max: 0.3
+      width: 1
+      height: 2

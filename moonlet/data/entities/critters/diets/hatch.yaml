@@ -1,0 +1,13 @@
+critter: Hatch
+add:
+  - in: 
+      materials: 
+      - Tundra_NickelOre
+      - Tundra_Nickel
+      - Tundra_LapisLazuli
+      - Tundra_CoarseDirt
+      - Tundra_Lichen
+      - Tundra_BrokenGlass
+      - Tundra_IronDust
+    out:
+      material: Carbon

@@ -1,0 +1,37 @@
+effects:
+ - id: Tundra_BerryJuice
+   name: Juicy
+   tooltip: Feeling the sugar rush!
+   durationSeconds: 300
+   modifiers:
+    - id: Athletics
+      value: 2
+    - id: Morale
+      value: 2
+
+ - id: Tundra_PowerJuice
+   name: Tuned Up
+   tooltip: This Duplicant has some Power Juice and is ready to take on the world!
+   durationSeconds: 300
+   modifiers:
+    - id: Strength
+      value: 2
+    - id: Learning
+      value: 2
+    - id: Morale
+      value: 2
+
+ - id: Tundra_SlushDrink
+   name: Cooled
+   tooltip: A nice cooling beverage. Recommended to keep chilled.
+   durationSeconds: 300
+   isBad: false
+   triggerFloatingText: true
+   showInUI: true
+   modifiers:
+    - id: StressDelta
+      value: -0.05
+      isMultiplier: false
+    - id: Morale
+      value: 1
+      isMultiplier: false

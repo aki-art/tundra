@@ -1,0 +1,21 @@
+id: Tundra_BlueFlower
+name: Bluecrown
+description: A strikingly blue decorative plant.
+
+seed:
+  id: Tundra_BlueFlowerSeed
+
+width: 1
+height: 1
+
+decorAlive:
+  range: 4
+  value: 25
+
+decorWilted:
+  range: 4
+  value: -20
+
+animation:
+  file: tundra_blueflower_kanim
+  defaultAnimation: idle

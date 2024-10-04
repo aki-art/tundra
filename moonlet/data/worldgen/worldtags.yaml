@@ -1,0 +1,8 @@
+# tags usable for unknownWorldCellsFilter, like AtStart or AtDepths
+# example usage: see worlds/TundraStartVanilla
+tags:
+  - name: Tundra_AtMoonCenter
+    dlcId: VANILLA
+    a: 
+      x: 0.7
+      y: 0.7

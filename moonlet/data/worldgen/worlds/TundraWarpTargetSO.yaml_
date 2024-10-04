@@ -1,0 +1,133 @@
+name: "Dense Forest Asteroid"
+description: "An asteroid with unusually dense vegetation"
+disableWorldTraits: true
+nameTables: [ FOREST, RADIOACTIVE ]
+asteroidIcon: asteroid_vanilla_mediumforestywasteland_kanim
+
+worldsize:
+  X: 128
+  Y: 160
+
+layoutMethod: PowerTree
+
+defaultsOverrides:
+  data:
+    OverworldAvoidRadius: 5
+    OverworldSampleBehaviour: PoissonDisk
+    OverworldDensityMin: 15
+    OverworldDensityMax: 18
+    OverworldMinNodes: 1
+    CGM_StartWorld_Base_Key : tundra/cgm/forestStartingBase
+    CGM_StartWorld_StartingAreaSubworld_Key: subworlds/tundraforest/Start
+    CGM_StartingAreaWaterSubworld_Key: subworlds/tundraforest/CgmExtraWater
+  startingWorldElements: []
+
+startSubworldName: subworlds/tundraforest/Start
+startingBaseTemplate: tundra/pois/denseforest/warpdestination
+startingBasePositionHorizontal:
+  min: 0.4
+  max: 0.6
+startingBasePositionVertical:
+  min: 0.45
+  max: 0.45
+
+# List all the subworld files to load
+subworldFiles:
+  - name: subworlds/forest/Forest
+    maxCount: 3
+  - name: subworlds/tundraforest/Burnt
+    overridePower: 0.7
+  - name: subworlds/tundraforest/CgmExtraWater
+  - name: subworlds/tundraforest/Metallic
+    minCount: 2
+    maxCount: 4
+  - name: subworlds/tundraforest/Start
+    overridePower: 1.5
+  - name: subworlds/tundraforest/TreeBranches
+    overridePower: 1.5
+  - name: subworlds/tundraglass/GlassCore
+    overridePower: 0.8
+  - name: subworlds/tundraglass/Insulated
+    overridePower: 0.7
+  - name: subworlds/space/Space
+    overridePower: 0.6
+  - name: subworlds/tundrasurface/TundraFragmentedSolid
+    overridePower: 0.7
+  
+unknownCellsAllowedSubworlds: 
+
+# start area / default fill
+  - tagcommand: Default
+    command: Replace
+    subworldNames:
+      - subworlds/tundraforest/Start
+
+# world filler
+  - tagCommand: DistanceFromTag
+    minDistance: 2
+    maxDistance: 99
+    tag: AtStart
+    command: Replace
+    subworldNames:
+      - subworlds/forest/Forest
+      - subworlds/tundraforest/EthanolLakes
+      - subworlds/tundraforest/Metallic
+      - subworlds/tundraforest/TreeBranches
+
+# core
+  - tagcommand: AtTag
+    tag: AtDepths
+    command: Replace
+    subworldNames:
+      - subworlds/tundraglass/GlassCore
+
+# core layer 1
+  - tagcommand: DistanceFromTag
+    tag: AtDepths
+    minDistance: 1
+    maxDistance: 1
+    command: Replace
+    subworldNames:
+      - subworlds/tundraglass/Insulated
+
+# core layer 2
+  - tagcommand: DistanceFromTag
+    tag: AtDepths
+    minDistance: 2
+    maxDistance: 2
+    command: Replace
+    subworldNames:
+      - subworlds/tundraforest/Burnt
+
+# surface
+  - tagcommand: DistanceFromTag
+    tag: AtSurface
+    minDistance: 2
+    maxDistance: 2
+    command: Replace
+    subworldNames:  
+      - subworlds/tundrasurface/TundraFragmentedSolid
+
+# two tall space
+  - tagcommand: DistanceFromTag 
+    tag: AtSurface
+    minDistance: 0
+    maxDistance: 1
+    command: Replace
+    subworldNames:
+      - subworlds/space/Space
+
+worldTemplateRules:
+  # Frozen Uranium
+  - names:
+      - expansion1::poi/radioactive/uranium_fields_liquid_co2_geyser
+      - expansion1::poi/radioactive/uranium_fields_liquid_co2_geyser_b
+      - expansion1::poi/radioactive/uranium_fields_liquid_co2_geyser_c
+    listRule: GuaranteeSomeTryMore
+    someCount: 1
+    moreCount: 1
+    priority: 100
+    allowExtremeTemperatureOverlap: true # This is acceptable
+    allowedCellsFilter:
+      - command: Replace
+        zoneTypes: [Forest]

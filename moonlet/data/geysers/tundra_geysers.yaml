@@ -1,0 +1,32 @@
+geysers:
+  - id: tundra_dirtywater_pipe
+    name: Dirty Water Pipe
+    description: An old pipe, leaking with Polluted Water.
+    animation: tundra_geyser_dirtywater_pipe_kanim
+    element: DirtyWater
+    generic: false # generic geysers spawn as random buried geysers and in fault biome
+    width: 3
+    height: 4
+    tintFx: afc248
+    temperatureCelsius: 90
+    minRatePerCycle: 2000
+    maxRatePerCycle: 4000
+    maxPressure: 500
+    minIterationLength: 60
+    maxIterationLength: 1140
+    minIterationPercent: 0.1
+    maxIterationPercent: 0.9
+    minYearLength: 15000
+    maxYearLength: 135000
+    minYearPercent: 0.4
+    maxYearPercent: 0.8
+    geyserTemperature: 372.15
+    disease: SlimeLung
+    diseaseCount: 5000
+
+  - id: tundra_molten_nickel
+    copyStats: molten_iron # take Iron Volcano as a base
+    animation: tundra_nickel_volcano_kanim
+    name: Nickel Volcano
+    description: A large volcano that periodically erupts with <link="TUNDRA_NICKELMOLTEN\">molten Nickel</link>.
+    element: Tundra_NickelMolten

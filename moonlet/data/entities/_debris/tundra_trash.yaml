@@ -1,0 +1,29 @@
+id: Tundra_Trash # must match the element ID
+
+onSpawn:
+  - !!destroy # immediately delete self on spawn
+    chance: 1
+onDestroy:
+  - !!spawnitems # spawn these possible items on destroy.
+    keepTotalMass: true
+    selectionMethod: WeightedRandom
+    items:
+      - name: Glass
+      - name: Polypropylene # plastic
+      - name: Tundra_BrokenGlass
+      - name: Wolframite
+      - name: Tungsten
+        weight: 0.5
+      - name: Steel
+        weight: 0.1
+      - name: EggShell
+        mass: 0.3
+      - name: FieldRation
+      - name: WoodLog
+      - name: Aerogel
+      - name: OrbitalResearchDatabank
+      - name: GeneShufflerRecharge
+        costMultiplier: 10
+        weight: 0.05
+      - name: PrintingPodRecharge_TwitchBioInk # modded items are also fine, they will be ignored if not loaded
+        mass: 1

@@ -1,0 +1,17 @@
+biomeNoise: noise/Tundra/BigZigZags
+temperatureRange: VeryCold
+minChildCount: 1
+pdWeight: 0.3
+density:
+  min: 10
+  max: 10
+avoidRadius: 5
+sampleBehaviour: PoissonDisk
+biomes:
+  - name: biomes/TundraSurface/Cobalt
+    weight: 1
+tags:
+  - IgnoreCaveOverride
+  - NoGlobalFeatureSpawning
+
+zoneType: Tundra_Cobalt

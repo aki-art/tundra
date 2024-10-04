@@ -1,0 +1,23 @@
+biomeNoise: noise/Tundra/SimpleCaves
+
+temperatureRange: HumanWarm
+
+borderOverride: TundraDirty
+borderOverridePriority: 0
+
+pdWeight: 1
+minChildCount: 6
+density:
+  min: 15
+  max: 25
+avoidRadius: 30
+sampleBehaviour: PoissonDisk
+
+biomes:
+  - name: biomes/TundraSwamp/Default
+    weight: 3
+
+tags:
+  - IgnoreCaveOverride
+
+zoneType: BoggyMarsh

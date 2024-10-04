@@ -1,0 +1,69 @@
+elements:
+  - elementId: ToxicSludge
+    name: Toxic Sludge
+    descriptionText: A slurry of dangerous waste materials.
+    color: 04a20c
+    waterCoolerEffect: Tundra_ToxicSludgeSoak
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 4.179
+    thermalConductivity: 0.58
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: -20.65C
+    highTemp: &highTemp 119.35C
+    lowTempTransitionTarget: ToxicIce
+    highTempTransitionTarget: Steam
+    highTempTransitionOreId: ToxicSand
+    highTempTransitionOreMassConversion: 0.01
+    defaultTemperature: 26C
+    defaultMass: 1000
+    molarMass: 20
+    toxicity: 0.1
+    lightAbsorptionFactor: 0.7
+    radiationAbsorptionFactor: 0.8
+    radiationPer1000Mass: 10
+    tags:
+    - Mixture
+    - AnyWater
+    state: Liquid
+    eyeIrritationStrength: 1 # casues heavy eye irritation
+    duplicantEffects:
+      submergedIn:
+        id: Tundra_ToxicSludgeSoak # effect when completely submerged
+      steppedIn: 
+        id: Tundra_ToxicSludgeSteppedIn # effect when stepping in this
+    rotAtmosphereQuality: Contaminating # foods rots in this faster
+
+  - elementId: ToxicIce
+    name: Toxic Ice
+    color: 04a20c
+    specificHeatCapacity: 3.05
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: *highTemp
+    highTempTransitionTarget: ToxicSludge
+    defaultTemperature: 230
+    defaultMass: 500
+    maxMass: 800
+    hardness: 10
+    molarMass: 25
+    lightAbsorptionFactor: 0.8
+    radiationAbsorptionFactor: 0.75
+    radiationPer1000Mass: 0
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - Mixture
+    - BuildableAny
+    buildMenuSort: 5
+    state: Solid
+    audio:
+      copyElement: Iron

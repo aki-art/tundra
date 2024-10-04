@@ -1,0 +1,101 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Modifier
+    name: Halver
+  source0:
+    type: Primitive
+    name: Bevins
+- target:
+    type: Combiner
+    name: Elevate
+  source0:
+    type: Modifier
+    name: Halver
+  source1:
+    type: Primitive
+    name: Elevation
+- target:
+    type: Combiner
+    name: Multiply_C08hdouz
+  source0:
+    type: Combiner
+    name: Elevate
+  source1:
+    type: Primitive
+    name: Constant_S1mQ4ctE
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Combiner
+    name: Multiply_C08hdouz
+primitives:
+  Bevins:
+    primative: BevinsValue
+    quality: Best
+    seed: 0
+    offset: 1
+    name: Bevins
+    pos:
+      X: 607.20488110474309
+      Y: 1035.3777615555305
+  Elevation:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: Elevation
+    pos:
+      X: 1109.2659891099636
+      Y: 1506.4593801854126
+  Constant_S1mQ4ctE:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 0.5
+    name: Constant_S1mQ4ctE
+    pos:
+      X: 1574.9449955806817
+      Y: 1514.6125673879178
+filters: {}
+transformers: {}
+selectors: {}
+modifiers:
+  Halver:
+    modifyType: Scale2d
+    scale2d:
+      X: 2
+      Y: 2
+    name: Halver
+    pos:
+      X: 960.14670400824025
+      Y: 1143.6470682816257
+combiners:
+  Elevate:
+    combineType: Add
+    name: Elevate
+    pos:
+      X: 1415.7258768109693
+      Y: 1175.172905306317
+  Multiply_C08hdouz:
+    combineType: Multiply
+    name: Multiply_C08hdouz
+    pos:
+      X: 1795.6123217969093
+      Y: 1203.8768101706389
+floats: {}
+controlpoints: {}

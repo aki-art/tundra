@@ -1,0 +1,32 @@
+id: Tundra_ThermalPastePlacer 
+name: Thermal Paste Block
+effectDescription: Places a single block of Thermal Paste. Thermal Paste is viscous and will be affected by gravity, but has thermal conductivity values comparable to Thermium.
+description: Places a single block of Thermal Paste. 
+
+materials:
+  - material: Tundra_ThermalPaste
+    mass: 100
+
+category: Utilities
+subCategory: temperature
+after: ThermalBlock # Put it after Temp-Shift plate in the build menu
+researchCategory: PrettyGoodConductors
+buildLocationRule: NotInTiles
+
+width: 1
+height: 1
+
+animation:
+  file: farmtile_kanim
+
+# # behavior
+# onSpawn:
+#   - !!destroy # immediately delete self on spawn
+#     chance: 1
+
+# onDestroy:
+#   - !!spawnelement # spawn a tile of thermal paste
+#     items:
+#       - name: Tundra_ThermalPaste
+#         mass: 100 
+#         temperature: 293.15

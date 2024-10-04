@@ -1,0 +1,13 @@
+shape: Splat
+tags:
+  - AllowExceedNodeBorders 
+borders:
+blobSize:
+  min: 3.0
+  max: 13.0
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Algae
+        weight: 1

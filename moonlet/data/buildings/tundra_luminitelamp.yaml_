@@ -1,0 +1,50 @@
+id: Tundra_LuminiteLamp
+name: Luminite Lamp
+effectDescription: An extremely bright and pretty light source.
+description: Provides <link="LIGHT">Light</link> and <link="DECOR">Decor</link>.
+audio: Glass
+viewMode: Light
+
+width: 1
+height: 3
+
+materials:
+  - material: Tundra_Luminite
+    mass: 50
+  - material: Transparent
+    mass: 100
+
+category: Furniture
+subCategory: decor
+neighbor: FloorLamp # Temp-Shift plate
+# tech: PrettyGoodConductors
+buildLocationRule: OnFloor
+
+# powerConsumer:
+#   requiresPowerInput: true
+#   wattConsumptionWhenActive: 10
+#   selfHeatKilowattsWhenActive: 0.1
+
+# automation:
+#   addLogicPowerPort: true
+
+decor: 
+  value: 50
+  range: 4
+
+tags: 
+  - Decoration
+  - Decor20
+  - LightSource
+
+animation:
+  file: farmtile_kanim
+
+components:
+  - !!lightEmitter
+    range: 5
+    lux: 2000
+    color: 0.4, 1.7, 2.55
+    offset:
+      x: 0
+      y: 2.5

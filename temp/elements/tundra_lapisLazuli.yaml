@@ -1,0 +1,31 @@
+elements:
+  - elementId: Tundra_LapisLazuli
+    name: Lapis Lazuli
+    descriptionText: A mineral with an enchantingly blue color.
+    color: 1629c4
+    modifiers:
+      decor: 100 
+    audio:
+      copyElement: Phosphorus
+    specificHeatCapacity: 0.84
+    thermalConductivity: 1.11
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1426.85C
+    highTempTransitionTarget: Magma
+    defaultTemperature: 26C
+    defaultMass: 600
+    maxMass: 1600
+    hardness: 2
+    molarMass: 25
+    lightAbsorptionFactor: 0.1
+    radiationAbsorptionFactor: 0.65
+    radiationPer1000Mass: 0
+    materialCategory: Other
+    tags:
+    - BuildableAny
+    - BuildableRaw
+    buildMenuSort: 5
+    state: Solid

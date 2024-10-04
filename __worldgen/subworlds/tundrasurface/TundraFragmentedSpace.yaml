@@ -1,0 +1,17 @@
+biomeNoise: expansion1::noise/HospitableSurface
+temperatureRange: VeryCold
+minChildCount: 1
+pdWeight: 0.3
+density:
+  min: 10
+  max: 10
+avoidRadius: 5
+sampleBehaviour: PoissonDisk
+biomes:
+  - name: biomes/Misc/Space
+    weight: 1
+tags:
+  - IgnoreCaveOverride
+  - NoGlobalFeatureSpawning
+
+zoneType: Space

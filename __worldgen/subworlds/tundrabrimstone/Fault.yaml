@@ -1,0 +1,43 @@
+biomeNoise: noise/Tundra/Serrated
+
+temperatureRange: Hot
+
+pdWeight: 1
+minChildCount: 6
+density:
+  min: 15
+  max: 25
+avoidRadius: 30
+sampleBehaviour: PoissonDisk
+
+biomes:
+  - name: biomes/TundraBrimstone/Default
+    weight: 3
+
+tags:
+  - IgnoreCaveOverride
+
+subworldTemplateRules:
+  - names:
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+      - tundra/pois/open_generic_geyser
+    listRule: TrySome
+    someCount: 12
+
+zoneType: Tundra_Brimstone

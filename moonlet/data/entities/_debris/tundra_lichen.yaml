@@ -1,0 +1,15 @@
+id: Tundra_Lichen  # must match the element ID
+
+# behavior
+components: 
+  - !!edible
+     kcalPerUnit: 7
+     quality: -1
+
+  - !!sublimates
+    sublimateFx: OxygenEmissionBubbles
+    element: Oxygen
+    rate: 0.01
+    minMass: 0.05
+    maxDestinationMass: 1.8
+    massPower: 1.0

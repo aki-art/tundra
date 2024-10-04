@@ -1,0 +1,32 @@
+elements:
+    - elementId: Tundra_Lichen
+      name: Lichen
+      descriptionText: Organic mass of fungus, cyanobacteria and algae.
+      color: 8fc29c
+      audio:
+        copyElement: Algae
+      specificHeatCapacity: 0.2
+      thermalConductivity: 2
+      solidSurfaceAreaMultiplier: 1
+      liquidSurfaceAreaMultiplier: 1
+      gasSurfaceAreaMultiplier: 1
+      strength: 0.2
+      highTempCelsius: 125 
+      highTempTransitionTarget: Dirt
+      defaultTemperatureCelsius: 16.85
+      defaultMass: 200
+      maxMass: 300
+      hardness: 2
+      molarMass: 4
+      lightAbsorptionFactor: 1
+      radiationAbsorptionFactor: 0.65
+      radiationPer1000Mass: 0
+      materialCategory: Organics
+      buildMenuSort: 2
+      isDisabled: false
+      state: Solid
+      sublimateId: Oxygen
+      sublimateFx: OxygenEmissionBubbles
+      sublimateRate: 0.1
+      sublimateEfficiency: 0.2
+      sublimateProbability: 0.05

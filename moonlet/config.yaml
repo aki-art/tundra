@@ -1,0 +1,46 @@
+## These fields will be used to generate a Mod Settings UI in the Mods menu. 
+# Access fields with {StaticId.Field}
+- config:
+  - category: "Elements"
+    settings:
+    - id: TrashPayoutCount # {Tundra.TrashPayoutCount}
+      title: "Trash Payouts"
+      tooltip: "How many items Trash element should drop"
+      type: integer
+      min: 0
+      max: 10
+      default: 5
+
+    - id: KcalPerLichenKg # {Tundra.KcalPerLichenKg}
+      title: "Lichen KCal"
+      tooltip: "How many KCal per Lichen debris kg. "
+      type: integer
+      min: 0
+      max: 5000
+      default: 7
+
+    - id: Tundra_ToxicSludgeDamage # {Tundra.Tundra_ToxicSludgeDamage}
+      title: "Toxic Sludge Damage"
+      tooltip: "Damage inflicted on dupes who step in Toxic Sludge."
+      type: decimal
+      min: 0.0
+      max: 1.0
+      default: 0.001
+    
+  - category: "Buildings"
+    settings:
+    - id: LuminiteLux # {Tundra.LuminiteLux}
+      title: "Luminite Lamp Lux"
+      tooltip: "Lux of the Luminite Lamp"
+      type: integer
+      min: 0
+      max: 50000
+      default: 1200
+
+    - id: LuminiteRange # {Tundra.LuminiteRange}
+      title: "Luminite Lamp Range"
+      tooltip: "How far Luminite Lamp lights"
+      type: integer
+      min: 0
+      max: 15
+      default: 10

@@ -1,0 +1,54 @@
+TerrainBiomeLookupTable:
+  # keys to remove from in-memory structure when this file is loaded
+  remove: [] 
+  # elements to add from in-memory structure when this file is loaded
+  add:
+    RockDense: 
+    - content: IgneousRock
+      bandSize: 0.5
+    - content: Dirt
+      bandSize: 0.2
+    - content: IgneousRock
+      bandSize: 0.5
+    - content: Sand
+      bandSize: 0.3
+    - content: Tundra_NickelOre
+      bandSize: 0.1
+    - content: Tundra_Lichen
+      bandSize: 0.5
+    - content: Oxygen
+      bandSize: 0.6
+    Metallic:
+    - content: IgneousRock
+      bandSize: 0.5
+    - content: Dirt
+      bandSize: 0.2
+    - content: IgneousRock
+      bandSize: 0.5
+    - content: Sand
+      bandSize: 0.3
+    - content: Fertilizer
+      bandSize: 0.3
+    - content: Tundra_NickelOre
+      bandSize: 0.6
+    - content: Tundra_Lichen
+      bandSize: 0.1
+    - content: Oxygen
+      bandSize: 0.6
+    Submerged:
+    - content: IgneousRock
+      bandSize: 0.5
+    - content: Dirt
+      bandSize: 0.2
+    - content: IgneousRock
+      bandSize: 0.5
+    - content: Sand
+      bandSize: 0.3
+    - content: Fertilizer
+      bandSize: 0.3
+    - content: Water
+      bandSize: 0.3
+    - content: Tundra_Lichen
+      bandSize: 0.1
+    - content: Oxygen
+      bandSize: 0.6

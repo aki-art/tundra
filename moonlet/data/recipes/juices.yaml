@@ -1,0 +1,26 @@
+recipes:
+  - fabricator: Tundra_Juicer
+    time: 40
+    description: Tasty fruit juice!
+    inputs:
+      - tag: Water
+        amount: 5
+      - tag: PrickleFruit 
+        amount: 5
+    outputs:
+      - tag: Tundra_GristleJuice
+        amount: 10
+
+  - fabricator: Tundra_Juicer
+    time: 40
+    description: Tasty fruit juice.
+    inputs:
+      - tag: Water
+        amount: 5
+      - tag: Lettuce
+        amount: 2
+      - tag: Algae
+        amount: 3
+    outputs:
+      - tag: Tundra_PowerJuice
+        amount: 10

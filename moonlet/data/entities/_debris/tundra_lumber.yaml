@@ -1,0 +1,10 @@
+id: Tundra_Lumber # must match the element ID
+
+onSpawn:
+  - !!destroy # immediately delete self on spawn
+    chance: 1
+onDestroy:
+  - !!spawnitems # spawn these possible items on destroy.
+    keepTotalMass: true
+    items:
+      - name: WoodLog

@@ -1,0 +1,35 @@
+shape: Blob
+borders:
+- 1
+- 1
+blobSize:
+  min: 1
+  max: 2
+elementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: Weighted
+    choices:
+    - element: Tundra_Trash
+      weight: 1
+    - element: Tundra_ToxicSludge
+      weight: 1
+    - element: Dirt
+      weight: 0.5
+    - element: Aluminum
+      weight: 0.5
+    - element: Tundra_Argon
+      weight: 4
+  RoomBorderChoices0:
+    selectionMethod: HorizontalSlice
+    choices:
+    - element: Tundra_BrokenGlass
+      weight: 0.2
+    - element: Tundra_Trash
+      weight: 1
+    - element: Obsidian
+      weight: 1
+  RoomBorderChoices1:
+    selectionMethod: HorizontalSlice
+    choices:
+    - element: Obsidian
+      weight: 1

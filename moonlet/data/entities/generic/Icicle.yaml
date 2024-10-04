@@ -1,0 +1,43 @@
+id: Tundra_Icicle
+name: Icicle
+description: A spike of Ice hanging from a ceiling.
+
+width: 1
+height: 2
+
+element: Ice
+mass: 20
+defaultTemperature: -40C
+
+layers:
+  - Building
+
+decor:
+  range: 2
+  value: 5
+
+animation:
+  file: tundra_icicle_kanim
+  defaultAnimation: idle1
+
+tags:
+  - DestroyWithoutFoundation
+
+# behavior
+# onSpawn:
+#   - !!playRandom
+#     options: 
+#       - idle1
+#       - idle2
+#     mode: Paused
+#     persistent: true # do not reroll on save reload
+
+# onDestroy:
+#   - !!dropMaterials
+
+# components: 
+#   - !!demolishable
+#   - !!foundationMonitor
+#     offsets:
+#       - x: 0
+#         y: 2

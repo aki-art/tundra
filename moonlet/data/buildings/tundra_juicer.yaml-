@@ -1,0 +1,51 @@
+id: Tundra_Juicer
+name: Fruit Squeezer
+effectDescription: todo
+description: Processes fruits and other ingredients to produce juices.  
+overlayMode: Power
+
+width: 2
+height: 3
+
+animation:
+  file: juicer_kanim
+
+materials:
+  - material: Metal
+    mass: 300
+
+tags:
+  - CookTop
+
+category: Food
+subCategory: temperature
+neighbor: HydrogenGenerator
+tech: PrettyGoodConductors
+buildLocationRule: OnFloor
+
+## power settings ------------------------------------------------
+exhaustKilowattsWhenActive: 2
+selfHeatKilowattsWhenActive: 2
+powerConsumption: 120
+
+powerInlet: 
+  x: 1
+  y: 0
+
+## automation  ---------------------------------------------------
+automation:
+  addLogicPowerPort: true
+
+## conduits  -----------------------------------------------------
+conduitIn: 
+  type: Liquid
+  x: 0
+  y: 1
+
+# behavior  ------------------------------------------------------
+components:
+  - !!fabricator
+    requiredSkillPerk: CanElectricGrill
+    duplicantOperated: true
+    sideScreenStyle: ListQueueHybrid
+    animationOverride: anim_interacts_juicer_kanim

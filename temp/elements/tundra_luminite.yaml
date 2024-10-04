@@ -1,0 +1,96 @@
+# example for advanced Yaml. 
+# Anchors is a Yaml feature, define with &, and then use with *. These act as reusable variables within the same file.
+# A `variables` field is provided on yamls for Moonlet files. This does nothing, it's there for organization. 
+# Anchors can also be defined inline at their first occurance, eg. `color: &color 46fff8`
+
+elements:
+    - elementId: Tundra_Luminite
+      name: Luminite
+      descriptionText: todo
+      color: &color 46fff8
+      specificHeatCapacity: 0.129
+      thermalConductivity: 7.97
+      solidSurfaceAreaMultiplier: 1
+      liquidSurfaceAreaMultiplier: 1
+      gasSurfaceAreaMultiplier: 1
+      strength: 0.7
+      highTemp: &meltingPoint 3450C
+      highTempTransitionTarget: Tundra_LuminiteMolten
+      defaultTemperature: 26C
+      defaultMass: 870
+      maxMass: 9970
+      hardness: 2
+      molarMass: 196.966569
+      lightAbsorptionFactor: 1
+      radiationAbsorptionFactor: 0.35
+      radiationPer1000Mass: 0.01
+      materialCategory: RefinedMetal
+      tags:
+      - BuildableAny
+      - Solids_Luminite
+      buildMenuSort: 3
+      state: Solid
+      specularTexture: tundra_luminite_spec
+      specularColor: 46fff8
+      modifiers:
+        decor: 80
+      audio:
+        copyElement: Gold
+
+    - elementId: Tundra_LuminiteMolten
+      name: Molten Luminite
+      color: *color
+      defaultPriority: VeryHigh
+      maxMass: 7870
+      liquidCompression: 1.01
+      speed: 100
+      minHorizontalFlow: 30
+      minVerticalFlow: 3
+      specificHeatCapacity: 0.91
+      thermalConductivity: 20.5
+      solidSurfaceAreaMultiplier: 1
+      liquidSurfaceAreaMultiplier: 25
+      gasSurfaceAreaMultiplier: 1
+      lowTemp: *meltingPoint
+      highTemp: &evaporationPoint 4620C
+      lowTempTransitionTarget: Tundra_Luminite
+      highTempTransitionTarget: Tundra_LuminiteGas
+      defaultTemperature: 3700C
+      defaultMass: 1000
+      molarMass: 55.845
+      toxicity: 0
+      lightAbsorptionFactor: 1
+      radiationAbsorptionFactor: 0.77
+      radiationPer1000Mass: 0
+      tags:
+      - Metal
+      - RefinedMetal
+      - EmitsLight
+      - Liquids_Luminite
+      state: Liquid
+  
+    - elementId: Tundra_LuminiteGas
+      name: Luminite Gas
+      color: *color
+      specificHeatCapacity: 0.91
+      thermalConductivity: 2.5
+      solidSurfaceAreaMultiplier: 25
+      liquidSurfaceAreaMultiplier: 1
+      gasSurfaceAreaMultiplier: 1
+      flow: 0.1
+      lowTemp: *evaporationPoint
+      lowTempTransitionTarget: Tundra_LuminiteMolten
+      defaultTemperature: 4800C
+      defaultPressure: 202
+      molarMass: 63.546
+      toxicity: 0
+      lightAbsorptionFactor: 0.5
+      radiationAbsorptionFactor: 0.07
+      radiationPer1000Mass: 0
+      materialCategory: Unbreathable
+      tags:
+      - Metal
+      - RefinedMetal
+      - EmitsLight
+      - Gases_Luminite
+      state: Gas

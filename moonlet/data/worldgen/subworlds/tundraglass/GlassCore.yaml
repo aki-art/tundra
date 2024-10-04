@@ -1,0 +1,32 @@
+biomeNoise: noise/Tundra/FlatCaves
+
+temperatureRange: ExtremelyHot
+
+pdWeight: 1
+minChildCount: 6
+density:
+  min: 15
+  max: 25
+avoidRadius: 30
+sampleBehaviour: PoissonDisk
+
+borderOverride: hardToDig
+borderOverridePriority: 9999
+borderSizeOverride:
+  min: 1
+  max: 1
+
+biomes:
+  - name: biomes/TundraGlass/Default
+    weight: 3
+
+tags:
+  - IgnoreCaveOverride
+
+# subworldTemplateRules:
+#   - names:
+#       - tundra/pois/open_generic_geyser # glass geyser
+#     listRule: TrySome
+#     someCount: 1
+
+zoneType: FrozenWastes

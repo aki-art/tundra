@@ -1,0 +1,11 @@
+elements:
+  - elementTag: AnyWater # apply to all elements with the AnyWater tag
+    duplicantEffects:
+      submergedIn:
+        removeEffects: 
+          - Tundra_ToxicSludgeSoak 
+          - Tundra_ToxicSludgeSteppedIn
+      steppedIn: 
+        removeEffects: 
+          - Tundra_ToxicSludgeSoak 
+          - Tundra_ToxicSludgeSteppedIn

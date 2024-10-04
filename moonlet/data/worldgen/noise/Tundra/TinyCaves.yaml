@@ -1,0 +1,80 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Combiner
+    name: Add_KmmyEnaG
+  source0:
+    type: Filter
+    name: RidgedMultiFractal_ohom16cG
+  source1:
+    type: Primitive
+    name: Constant_EZDtK12S
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Combiner
+    name: Add_KmmyEnaG
+- target:
+    type: Filter
+    name: RidgedMultiFractal_ohom16cG
+  source0:
+    type: Primitive
+    name: SimplexPerlin_BpbR9kBi
+primitives:
+  SimplexPerlin_BpbR9kBi:
+    primative: SimplexPerlin
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: SimplexPerlin_BpbR9kBi
+    pos:
+      X: -598.33333333333348
+      Y: 110.04000000000005
+  Constant_EZDtK12S:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 0.100000001
+    name: Constant_EZDtK12S
+    pos:
+      X: -162.95132845980447
+      Y: 563.73124384123764
+filters:
+  RidgedMultiFractal_ohom16cG:
+    filter: RidgedMultiFractal
+    frequency: 1.5
+    lacunarity: 1
+    octaves: 1
+    offset: 1
+    gain: 2
+    exponent: 1
+    name: RidgedMultiFractal_ohom16cG
+    pos:
+      X: -266.91078041867064
+      Y: 90.976741984632909
+transformers: {}
+selectors: {}
+modifiers: {}
+combiners:
+  Add_KmmyEnaG:
+    combineType: Add
+    name: Add_KmmyEnaG
+    pos:
+      X: 213.59207721221469
+      Y: 338.67081746255934
+floats: {}
+controlpoints: {}

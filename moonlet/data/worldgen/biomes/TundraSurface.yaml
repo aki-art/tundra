@@ -1,0 +1,15 @@
+TerrainBiomeLookupTable:
+  # keys to remove from in-memory structure when this file is loaded
+  remove: [] 
+  # elements to add from in-memory structure when this file is loaded
+  add:
+    Cobalt:
+    - content: Katairite
+      bandSize: 0.6
+    - content: Cobaltite
+      bandSize: 0.7
+    - content: MaficRock
+      bandSize: 0.3
+    SolidAlgae:
+    - content: Algae
+      bandSize: 1

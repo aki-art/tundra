@@ -1,0 +1,137 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Filter
+    name: RidgedMultiFractal
+  source0:
+    type: Primitive
+    name: MainNoise
+- target:
+    type: Modifier
+    name: MainScaler
+  source0:
+    type: Filter
+    name: RidgedMultiFractal
+- target:
+    type: Modifier
+    name: VerticalScaler
+  source0:
+    type: Primitive
+    name: VerticalOffsetNoise
+- target:
+    type: Combiner
+    name: MultiplyScalerAndMain
+  source0:
+    type: Modifier
+    name: VerticalScaler
+  source1:
+    type: Primitive
+    name: VerticalOffsetStrength
+- target:
+    type: Transformer
+    name: Displace
+  source0:
+    type: Modifier
+    name: MainScaler
+  source2:
+    type: Combiner
+    name: MultiplyScalerAndMain
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Transformer
+    name: Displace
+primitives:
+  MainNoise:
+    primative: SimplexPerlin
+    quality: Standard
+    seed: 0
+    offset: 1
+    name: MainNoise
+    pos:
+      X: 115.66666666666652
+      Y: 266.04000000000002
+  VerticalOffsetNoise:
+    primative: SimplexPerlin
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: VerticalOffsetNoise
+    pos:
+      X: 170.89117293001175
+      Y: 1095.1535633804385
+  VerticalOffsetStrength:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: 0.150000006
+    name: VerticalOffsetStrength
+    pos:
+      X: 546.36996913258656
+      Y: 1510.6710641775576
+filters:
+  RidgedMultiFractal:
+    filter: RidgedMultiFractal
+    frequency: 4
+    lacunarity: 4
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: RidgedMultiFractal
+    pos:
+      X: 447.26230821518368
+      Y: 247.03999999999999
+transformers:
+  Displace:
+    transformerType: Displace
+    rotation:
+      X: 0
+      Y: 0
+    name: Displace
+    pos:
+      X: 1531.3188559928085
+      Y: 764.50186866223987
+selectors: {}
+modifiers:
+  MainScaler:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.100000001
+      Y: 0.239999995
+    name: MainScaler
+    pos:
+      X: 1043.7409318414118
+      Y: 543.67666547027625
+  VerticalScaler:
+    modifyType: Scale2d
+    scale2d:
+      X: 2.5
+      Y: 0.0399999991
+    name: VerticalScaler
+    pos:
+      X: 613.02455658818621
+      Y: 1190.4409305481486
+combiners:
+  MultiplyScalerAndMain:
+    combineType: Multiply
+    name: MultiplyScalerAndMain
+    pos:
+      X: 1102.1820535393094
+      Y: 1271.3272301805964
+floats: {}
+controlpoints: {}

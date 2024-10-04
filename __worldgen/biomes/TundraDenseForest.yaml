@@ -1,0 +1,74 @@
+TerrainBiomeLookupTable:
+  # keys to remove from in-memory structure when this file is loaded
+  remove: [] 
+  # elements to add from in-memory structure when this file is loaded
+  add:
+    Default:
+    - content: CarbonDioxide
+      bandSize: 0.7
+    - content: ContaminatedOxygen
+      bandSize: 0.7
+    - content: Tundra_Lumber
+      bandSize: 1.4
+      overrides:
+        temperatureOverride: 313.15
+    - content: Tundra_CoarseDirt
+      bandSize: 0.3
+      overrides:
+        temperatureOverride: 313.15
+    - content: Dirt
+      bandSize: 0.25
+    Metallic:
+    - content: CarbonDioxide
+      bandSize: 0.7
+    - content: ContaminatedOxygen
+      bandSize: 0.7
+    - content: AluminumOre
+      bandSize: 0.7
+    - content: Tundra_Lumber
+      bandSize: 1.4
+      overrides:
+        temperatureOverride: 313.15
+    - content: Tundra_CoarseDirt
+      bandSize: 0.3
+      overrides:
+        temperatureOverride: 313.15
+    - content: Dirt
+      bandSize: 0.25
+    EthanolLakes:
+    - content: CarbonDioxide
+      bandSize: 0.2
+    - content: ContaminatedOxygen
+      bandSize: 0.4
+    - content: Ethanol
+      bandSize: 0.4
+    - content: Tundra_Lumber
+      bandSize: 1.4
+      overrides:
+        temperatureOverride: 313.15
+    - content: Tundra_CoarseDirt
+      bandSize: 0.3
+      overrides:
+        temperatureOverride: 313.15
+    - content: Fertilizer
+      bandSize: 0.25
+    Burnt:
+    - content: CarbonDioxide
+      bandSize: 1.4
+    - content: Tundra_Lumber
+      bandSize: 0.7
+      overrides:
+        temperatureOverride: 313.15
+    - content: Carbon
+      bandSize: 0.8
+    - content: Tundra_CoarseDirt
+      bandSize: 0.4
+      overrides:
+        temperatureOverride: 313.15
+    - content: Dirt
+      bandSize: 0.1
+    SolidWood: 
+    - content: Tundra_Lumber
+      bandSize: 1.4
+      overrides:
+        temperatureOverride: 313.15

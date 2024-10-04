@@ -1,0 +1,34 @@
+elements:
+  - elementId: Water
+    # this is called an anchor. it's a YAML feature that lets you define 
+    # presets within a .yaml file. This is the same as copypasting this
+    # whole block everywhere where *removeSludge is mentioned
+    duplicantEffects: &removeSludge 
+      submergedIn:
+        removeEffects: 
+          - Tundra_ToxicSludgeSoak 
+          - Tundra_ToxicSludgeSteppedIn
+      steppedIn: 
+        removeEffects: 
+          - Tundra_ToxicSludgeSoak 
+          - Tundra_ToxicSludgeSteppedIn
+
+  - elementId: SaltWater
+    duplicantEffects: *removeSludge
+
+  - elementId: Brine
+    duplicantEffects: *removeSludge
+
+  - elementId: Tundra_Slush
+    duplicantEffects: *removeSludge
+
+  - elementId: DirtyWater
+    duplicantEffects: *removeSludge
+
+  - elementId: CrudeOil
+    waterCoolerEffect: NoFunAllowed
+    waterCoolerTooltip: Ew.
+
+  - elementId: MilkFat
+    waterCoolerEffect: DuplicantGotMilk
+    waterCoolerTooltip: yum

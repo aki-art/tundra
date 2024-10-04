@@ -1,0 +1,36 @@
+tags:
+  - Wet
+  - AllowExceedNodeBorders
+shape: TallThin
+borders:
+  - 1
+  - 1
+blobSize:
+  min: 7
+  max: 14
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: HorizontalSlice
+    choices:
+      - element: Oxygen
+        weight: 0.2
+      - element: Water
+        weight: 1.0
+  RoomBorderChoices0:
+    selectionMethod: HorizontalSlice
+    choices:
+      - element: IgneousRock
+        weight: 0.3
+      - element: Tundra_Lichen
+        weight: 0.7
+#        overrides:
+#          massOverride: 900
+      - element: Oxygen
+        weight: 0.3
+  RoomBorderChoices1:
+    selectionMethod: HorizontalSlice
+    choices:
+      - element: IgneousRock
+        weight: 0.8
+      - element: Tundra_Lichen
+        weight: 0.2

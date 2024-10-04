@@ -1,0 +1,30 @@
+elements:
+  - elementId: Tundra_ThermalPaste
+    name: Thermal Paste
+    descriptionText: ...
+    color: FFFFFF
+    specificHeatCapacity: 0.622
+    thermalConductivity: 220
+    solidSurfaceAreaMultiplier: 2
+    liquidSurfaceAreaMultiplier: 2
+    gasSurfaceAreaMultiplier: 2
+    strength: 0.8
+    highTemp: 2950
+    highTempTransitionTarget: MoltenNiobium
+    highTempTransitionOreId: Tungsten
+    highTempTransitionOreMassConversion: 0.95
+    defaultTemperature: 242.15
+    defaultMass: 900
+    maxMass: 1800
+    hardness: 80
+    molarMass: 174.35
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.6
+    radiationPer1000Mass: 0
+    materialCategory: ManufacturedMaterial
+    tags:
+    - BuildableAny
+    - Unstable
+    - Melty
+    state: Solid
+    buildMenuSort: 61

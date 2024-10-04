@@ -1,0 +1,6 @@
+# provide this file in the cluster defaultSkyScape, or the world skyScape fields
+celestialBodies:
+  - tundra_frozen_earth
+
+space:
+  - tundra_nebula

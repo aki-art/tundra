@@ -1,0 +1,13 @@
+id: Tundra_ChillSpice
+name: Chill Spice
+description: A calming blue spice.
+icon: tundra_spice_chill
+color: 0000ff
+effects: 
+  - attributeId: StressDelta
+    value: -5/600 # -5% per cycle
+ingredients:
+  - tag: Tundra_LapisLazuli
+    amount: 5
+  - tag: Ice
+    amount: 1

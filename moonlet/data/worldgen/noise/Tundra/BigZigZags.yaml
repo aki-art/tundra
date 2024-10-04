@@ -1,0 +1,107 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Modifier
+    name: Stretchy
+  source0:
+    type: Primitive
+    name: BaseNoise
+- target:
+    type: Filter
+    name: Turbulence
+  source0:
+    type: Modifier
+    name: Stretchy
+- target:
+    type: Transformer
+    name: Displace_a4FBiVXK
+  source0:
+    type: Filter
+    name: Turbulence
+  source2:
+    type: Primitive
+    name: Cylinders_n9hHU2qH
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Transformer
+    name: Displace_a4FBiVXK
+primitives:
+  BaseNoise:
+    primative: SimplexPerlin
+    quality: Fast
+    seed: 0
+    offset: 1
+    name: BaseNoise
+    pos:
+      X: -323.66666666666674
+      Y: 198.03999999999999
+  Cylinders_n9hHU2qH:
+    primative: Cylinders
+    quality: Fast
+    seed: 0
+    offset: 0.300000012
+    name: Cylinders_n9hHU2qH
+    pos:
+      X: 212.9994456425992
+      Y: 826.07877796706418
+filters:
+  Turbulence:
+    filter: Billow
+    frequency: 2
+    lacunarity: 6
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: Turbulence
+    pos:
+      X: 239.33333333333326
+      Y: 405.03999999999996
+transformers:
+  RotatePoint_y7biMaM6:
+    transformerType: RotatePoint
+    rotation:
+      X: 0
+      Y: 0
+    name: RotatePoint_y7biMaM6
+    pos:
+      X: 560.72501484524935
+      Y: 169.26381391761404
+  Displace_a4FBiVXK:
+    transformerType: Displace
+    rotation:
+      X: 0
+      Y: 0
+    name: Displace_a4FBiVXK
+    pos:
+      X: 713.78370556265486
+      Y: 644.78595983576804
+selectors: {}
+modifiers:
+  Stretchy:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.200000003
+      Y: 2
+    name: Stretchy
+    pos:
+      X: 42.333333333333258
+      Y: 261.04000000000002
+combiners: {}
+floats: {}
+controlpoints: {}

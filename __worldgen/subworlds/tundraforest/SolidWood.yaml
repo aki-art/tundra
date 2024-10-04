@@ -1,0 +1,36 @@
+biomeNoise: noise/Tundra/TinyCaves
+
+temperatureRange: HumanWarm
+
+pdWeight: 1
+minChildCount: 6
+density:
+  min: 15
+  max: 25
+avoidRadius: 30
+sampleBehaviour: PoissonDisk
+
+borderOverride: NONE
+borderOverridePriority: 10
+  
+biomes:
+  - name: biomes/TundraDenseForest/SolidWood
+    weight: 2
+    tags:
+      - Oxyfern
+      - ForestTree
+      - BasicSingleHarvestPlant
+      - BasicSingleHarvestPlantSeed
+      - ForestForagePlantPlanted
+      - LightBug
+      - LeafyPlant
+      - LeafyPlantSeed
+      - Squirrel
+
+features:
+  - type: features/tundra/denseforest/algaeSplat
+
+tags:
+  - IgnoreCaveOverride
+
+zoneType: Forest

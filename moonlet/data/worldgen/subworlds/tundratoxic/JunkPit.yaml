@@ -1,0 +1,34 @@
+biomeNoise: noise/Tundra/Grid
+
+temperatureRange: Hot
+
+pdWeight: 1
+minChildCount: 6
+density:
+  min: 15
+  max: 25
+avoidRadius: 30
+sampleBehaviour: PoissonDisk
+
+biomes:
+  - name: biomes/TundraToxic/Default
+    weight: 3
+
+tags:
+  - IgnoreCaveOverride
+
+zoneType: Tundra_Toxic
+
+subworldTemplateRules:
+  - names:
+      - tundra/pois/toxic/battery_room
+      - tundra/pois/toxic/beachchair2
+      - tundra/pois/toxic/nutrientbarexhibition
+      - tundra/pois/toxic/pooppark
+      - tundra/pois/toxic/sludgevat1
+      - tundra/pois/toxic/sludgevat2
+      - tundra/pois/toxic/magmavat1
+      - tundra/pois/toxic/randompipes
+      - tundra/pois/toxic/veryusefulheater
+    listRule: TryAll
+    ruleId: junkpit_junk

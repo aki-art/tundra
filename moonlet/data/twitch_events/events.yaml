@@ -1,0 +1,55 @@
+events:
+  - !!spawnElement
+    id: Tundra_SpawnTrash
+    chatName: Trash
+    toast:
+      title: Trash
+      body: I'm the trashman!
+    weight: Common
+    danger: None
+    radius: 2
+    element: Tundra_Trash
+    # surroundBy: Katairite
+    skipEntities: true
+    messPerTile: 20
+
+  # - !!buryBuilding
+  #   id: Lichen_Bedroom
+  #   chatName: Overgrown Bedrooms
+  #   toast:
+  #     title: Overgrown Bedrooms
+  #     body: How long have these been cleaned?
+  #   weight: Common
+  #   danger: Small
+  #   target: 
+  #     - components: [ Sleepable ]
+  #   elementChoices:
+  #     - id: Tundra_Lichen
+  #       weight: 1
+  #     - id: Algae
+  #       weight: 0.6
+  #     - id: Beached_Moss # ignored if the mod is not around
+  #       weight: 1
+  #   chancePerTile: 0.5
+  #   respectGravity: true
+
+    
+  # - !!rain
+  #   id: Toxic_Sludge
+  #   chatName: Toxic Rain
+  #   toast:
+  #     title: Toxic Rain
+  #     body: A rain of Toxic Sludge has begun!
+  #   weight: Uncommon
+  #   danger: Deadly
+  #   radius: 12
+  #   element: Tundra_Tundra_ToxicSludge
+  #   totamMassKg:
+  #     min: 2000
+  #     max: 4000
+  #   dropletMass: 10
+  #   durationSeconds: 50
+  #   delaySecond: 1
+  #   playSound: tundra_sizzle
+
+  

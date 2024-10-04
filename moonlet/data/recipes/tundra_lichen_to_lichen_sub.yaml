@@ -1,0 +1,14 @@
+recipes:
+  - fabricator: CookingStation # Electric Grill
+  
+    inputs:
+      - tag: Tundra_Lichen
+        amount: 10
+      - tag: ColdWheatSeed # Sleet Wheat Grain
+        amount: 2
+      - tag: Lettuce
+        amount: 2
+
+    outputs:
+      - tag: CookedMeat
+        amount: 1

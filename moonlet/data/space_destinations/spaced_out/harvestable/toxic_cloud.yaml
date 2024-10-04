@@ -1,0 +1,38 @@
+id: Tundra_HarvestablePOI_ToxicCloud
+name: Toxic Mist
+description: A cloud of toxic fumes.
+
+canProvideArtifact: true
+
+# what elements does this POI provide. the numbers represent the rarity (lower the rarer, relative to each other (weight))
+elements:
+  - element: Tundra_Argon
+    weight:  1.0
+  - element: Tundra_ToxicSludge
+    weight:  1.0
+  - element: ToxicMud
+    weight:  0.5
+  - element: ToxicSand
+    weight:  1.0
+
+capacity:
+  min: 54000
+  max: 85000
+
+recharge:
+  min: 30000
+  max: 60000
+
+animation:
+  file: tundra_harvestablespacepoi_toxicmist_kanim
+  defaultAnimation: option_f
+
+# pick one of these
+animationOverrides: 
+  - "option_a"
+  - "option_b"
+  - "option_c"
+  - "option_d"
+  - "option_e"
+  - "option_f"
+  - "option_g"

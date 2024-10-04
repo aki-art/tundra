@@ -1,0 +1,24 @@
+name: STRINGS.WORLDS.TUNDRASTART.NAME
+description: STRINGS.WORLDS.TUNDRASTART.DESCRIPTION
+requiredDlcId: EXPANSION1_ID
+menuOrder: 0
+coordinatePrefix: TNDR-
+clusterCategory: 2
+disableStoryTraits: true
+
+numRings: 12
+startWorldIndex: 0 
+worldPlacements:
+- world: worlds/TundraStart
+  buffer: 2
+  locationType: StartWorld
+  allowedRings:
+    min: 0
+    max: 0
+
+- world: worlds/TundraWarpTargetSO
+  buffer: 2
+  locationType: InnerCluster
+  allowedRings:
+    min: 3
+    max: 3

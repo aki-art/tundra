@@ -1,0 +1,13 @@
+id: Tundra_PuftPlushie # artifacts are forcibly reformatted by the game: this artifact will have an internal ID of `artifact_tundra_puftplushie`
+name: Glitter Puft Plushie
+description: Delightful, colorful, glitterful!
+
+type: Any # Any, Space, Terrestrial
+tier: 2 # None, 0, 1, 2, 3, 4, 5 : determines Decor and payload drop chance
+
+width: 1
+height: 1.1
+
+animation:
+  file: tundra_rainbowpuftplush_kanim
+  defaultAnimation: object

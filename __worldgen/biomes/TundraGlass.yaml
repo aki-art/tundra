@@ -1,0 +1,33 @@
+TerrainBiomeLookupTable:
+  # keys to remove from in-memory structure when this file is loaded
+  remove: [] 
+  # elements to add from in-memory structure when this file is loaded
+  add:
+    Default:
+    - content: CarbonDioxide
+      bandSize: 1
+      overrides:
+        temperatureOverride: 1700
+    - content: MoltenGlass
+      overrides:
+        massOverride: 1200
+      bandSize: 1
+    - content: Diamond
+      bandSize: 0.4
+      overrides:
+        temperatureOverride: 1700
+    - content: Obsidian
+      bandSize: 0.3
+      overrides:
+        temperatureOverride: 1700
+    Insulator:
+    - content: Katairite
+      bandSize: 0.6
+    - content: Obsidian
+      bandSize: 0.7
+    - content: Fossil
+      bandSize: 0.3
+    - content: Diamond
+      bandSize: 0.3
+    - content: Vacuum
+      bandSize: 0.8

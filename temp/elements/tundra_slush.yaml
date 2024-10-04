@@ -1,0 +1,32 @@
+elements:
+  - elementId: Tundra_Slush
+    name: Slush
+    descriptionText: Liquid slushy snow.
+    color: e3ecff
+    waterCoolerEffect: Tundra_SlushDrink
+    waterCoolerTooltip: A refreshing cold drink.
+    maxMass: 300
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 4.179
+    thermalConductivity: 0.58
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTempCelsius: -15
+    highTempCelsius: 5
+    lowTempTransitionTarget: CrushedIce
+    highTempTransitionTarget: Water
+    defaultTemperature: 300
+    defaultMass: 1000
+    molarMass: 20
+    toxicity: 0.1
+    lightAbsorptionFactor: 0.7
+    radiationAbsorptionFactor: 0.8
+    radiationPer1000Mass: 10
+    tags:
+    - Mixture
+    - AnyWater
+    state: Liquid

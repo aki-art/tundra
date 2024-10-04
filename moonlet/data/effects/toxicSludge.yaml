@@ -1,0 +1,37 @@
+effects:
+ - id: Tundra_ToxicSludgeSoak
+   name: Sludged
+   tooltip: This duplicant has been submerged in acidic Toxic Sludge.
+   atmoSuitImmunity: true
+   durationSeconds: 1
+   isBad: true
+   triggerFloatingText: true
+   showInUI: true
+   tags:
+    - Moonlet_Soaked
+   modifiers:
+    - id: HitPointsDelta
+      value: -1
+      isMultiplier: false
+    - id: StressDelta
+      value: 0.05
+      isMultiplier: false
+
+ - id: Tundra_ToxicSludgeSteppedIn
+   name: Hurt feetsies
+   tooltip: This duplicant has burnt their feet stepping in Toxic Sludge.
+   atmoSuitImmunity: true
+   tint: 77FF77
+   tags:
+    - Moonlet_WetFeet
+   durationSeconds: 1
+   isBad: true
+   triggerFloatingText: true
+   showInUI: true
+   modifiers:
+    - id: HitPointsDelta
+      value: -0.2
+      isMultiplier: false
+    - id: StressDelta
+      value: 0.01
+      isMultiplier: false

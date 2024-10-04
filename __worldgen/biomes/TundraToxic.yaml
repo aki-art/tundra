@@ -1,0 +1,18 @@
+TerrainBiomeLookupTable:
+  # keys to remove from in-memory structure when this file is loaded
+  remove: [] 
+  # elements to add from in-memory structure when this file is loaded
+  add:
+    Default:
+    - content: CarbonDioxide
+      bandSize: 0.4
+    - content: Aluminum
+      bandSize: 0.2
+    - content: ToxicMud
+      bandSize: 0.2
+    - content: Aluminum
+      bandSize: 0.4
+    - content: ToxicSand
+      bandSize: 0.3
+    - content: Corium
+      bandSize: 0.3

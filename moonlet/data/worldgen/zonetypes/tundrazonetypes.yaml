@@ -1,0 +1,29 @@
+# each texture must have a matching file in moonlet/assets/zonetypes
+# this file has to be 1024x1024 .dds (DXT1) file
+# here is a png to dds converter: https://convertio.co/png-dds/
+
+zoneTypes:
+  - id: Tundra_Frozen
+    background: tundraFrozenBg # moonlet/assets/zonetypes/tundraFrozenBg.dds
+    color: C4CDDC
+    border: Sandstone
+
+  - id: Tundra_ExtraFrozen
+    background: extraFrozenBg # moonlet/assets/zonetypes/tundraFrozenBg.dds
+    color: D3DBE3
+    border: FrozenWastes
+
+  - id: Tundra_Toxic
+    background: toxicBg # moonlet/assets/zonetypes/toxicBg.dds
+    color: 2B6200
+    border: CrystalCaverns
+
+  - id: Tundra_Brimstone
+    background: brimstoneBg # moonlet/assets/zonetypes/brimstoneBg.dds
+    color: FF080000
+    border: MagmaCore
+
+  - id: Tundra_Cobalt
+    background: cobaltBg # moonlet/assets/zonetypes/cobaltBg.dds
+    color: 0943FC
+    border: Space

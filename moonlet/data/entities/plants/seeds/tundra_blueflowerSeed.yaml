@@ -1,0 +1,14 @@
+id: Tundra_BlueFlowerSeed
+name: Bluecrown Seed
+description: Blue seed of a blue plant.
+
+tags:
+  - DecorSeed
+  - Seed
+  - PedestalDisplayable
+
+width: 0.3
+height: 0.3
+
+animation:
+  file: tundra_seed_blueflower_kanim

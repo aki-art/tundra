@@ -1,0 +1,20 @@
+TerrainBiomeLookupTable:
+  # keys to remove from in-memory structure when this file is loaded
+  remove: [] 
+  # elements to add from in-memory structure when this file is loaded
+  add:
+    Default:
+    - content: Obsidian
+      bandSize: 0.02
+    - content: IgneousRock
+      bandSize: 0.05
+    - content: Fossil
+      bandSize: 0.05
+    - content: Sulfur
+      bandSize: 0.05
+    - content: IgneousRock
+      bandSize: 0.05
+    - content: CarbonDioxide
+      bandSize: 0.05
+    - content: Brine
+      bandSize: 0.05

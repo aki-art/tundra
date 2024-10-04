@@ -1,0 +1,383 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Application: Oxygen Not IncludedGenerated with FUtilityPOT Version: 2.0\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_BERRYJUICE.NAME"
+msgid "Juicy"
+msgstr "Bogyós Gyümölcslé"
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_BERRYJUICE.TOOLTIP"
+msgid "Feeling the sugar rush!"
+msgstr "Hiperaktív a cukortól."
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_MINOROXYGENBUFF.NAME"
+msgid "Lichen Breath"
+msgstr "Zuzmólélegzet"
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_MINOROXYGENBUFF.TOOLTIP"
+msgid "This duplicant has been submerged in acidic Toxic Sludge."
+msgstr "A Duplikáns Zuzmót evett, és most nagyon jól tud lélegezni."
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_POWERJUICE.NAME"
+msgid "Tuned Up"
+msgstr "Felpörgött"
+
+#
+#, fuzzy
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_POWERJUICE.TOOLTIP"
+msgid "This Duplicant has some Power Juice and is ready to take on the world!"
+msgstr "A duplikáns ivott az Erőitalból, "
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_SLUSHDRINK.NAME"
+msgid "Cooled"
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.TUNDRA_SLUSHDRINK.TOOLTIP"
+msgid "A nice cooling beverage. Recommended to keep chilled."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.Tundra_ToxicSludgeSoak.NAME"
+msgid "Sludged"
+msgstr "Trutyis"
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.Tundra_ToxicSludgeSoak.TOOLTIP"
+msgid "This duplicant has been submerged in acidic Toxic Sludge."
+msgstr "A Duplikáns Méregiszapban úszott."
+
+#
+msgctxt "Tundra.STRINGS.DUPLICANTS.MODIFIERS.Tundra_ToxicSludgeSteppedIn.NAME"
+msgid "Hurt feetsies"
+msgstr "Fájós talp"
+
+#
+msgctxt ""
+"Tundra.STRINGS.DUPLICANTS.MODIFIERS.Tundra_ToxicSludgeSteppedIn.TOOLTIP"
+msgid "This duplicant has burnt their feet stepping in Toxic Sludge."
+msgstr "A Duplikáns Méregiszapba lépett, és megsértette a lábát"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.ARGON.DESCRIPTION"
+msgid ""
+"Argon is a chemical element with the symbol Ar and atomic number 18. It is "
+"in group 18 of the periodic table and is a noble gas.[7] Argon is the third-"
+"most abundant gas in Earth's atmosphere."
+msgstr ""
+"Az Argon egy kémiai elem Ar vegyjellel, 18-as kémiai számmal. Az Argon a "
+"harmadik leggyakoribb gáz az atmoszférában."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.ARGON.NAME"
+msgid "Argon"
+msgstr "Argon"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.BROKENGLASS.DESCRIPTION"
+msgid "Shards of sharp glass pieces."
+msgstr "Éles és veszélyes üveg hulladék."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.BROKENGLASS.NAME"
+msgid "Broken Glass"
+msgstr "Tört Üveg"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.LIQUIDARGON.DESCRIPTION"
+msgid ""
+"Argon is a chemical element with the symbol Ar and atomic number 18. It is "
+"in group 18 of the periodic table and is a noble gas.[7] Argon is the third-"
+"most abundant gas in Earth's atmosphere."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.LIQUIDARGON.NAME"
+msgid "Argon"
+msgstr "Folyékony Argon"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.SOLIDARGON.DESCRIPTION"
+msgid ""
+"Argon is a chemical element with the symbol Ar and atomic number 18. It is "
+"in group 18 of the periodic table and is a noble gas.[7] Argon is the third-"
+"most abundant gas in Earth's atmosphere."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.SOLIDARGON.NAME"
+msgid "Solid Argon"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+msgctxt "Tundra.STRINGS.ELEMENTS.Tundra_ToxicIce.DESCRIPTION"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.Tundra_ToxicIce.NAME"
+msgid "Toxic Ice"
+msgstr "Méregjég"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.Tundra_ToxicSludge.DESCRIPTION"
+msgid "A slurry of dangerous waste materials."
+msgstr "Veszélyes folyékony anyagok keveréke."
+
+#  Reference to Noita liquid
+msgctxt "Tundra.STRINGS.ELEMENTS.Tundra_ToxicSludge.NAME"
+msgid "Toxic Sludge "
+msgstr "Méregiszap"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_CACTUSJUICE.DESCRIPTION"
+msgid "Tasty and refreshing."
+msgstr "Finom és felfrissítő."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_CACTUSJUICE.NAME"
+msgid "Cactus Juice"
+msgstr "Kaktuszlé"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_COARSEDIRT.DESCRIPTION"
+msgid "Rough and uneven mix of dirt and pebbles."
+msgstr "Kavicsos föld keverék."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_COARSEDIRT.NAME"
+msgid "Coarse Dirt"
+msgstr "Durva Föld"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_GRISTLEJUICE.DESCRIPTION"
+msgid "Tasty and refreshing."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_GRISTLEJUICE.NAME"
+msgid "Gristle Juice"
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_IRONDUST.DESCRIPTION"
+msgid ""
+"Iron pulverized over millions of years. That pressure was really just too "
+"much."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_IRONDUST.NAME"
+msgid "Iron Dust"
+msgstr "Vas fémpor"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LAPISLAZULI.DESCRIPTION"
+msgid "A mineral with an enchantingly blue color."
+msgstr "Egy ásványi anyag, varászlatosan kék színekben."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LAPISLAZULI.NAME"
+msgid "Lapis Lazuli"
+msgstr "Lapisz Lazuli"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LICHEN.DESCRIPTION"
+msgid "Organic mass of fungus, cyanobacteria and algae."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LICHEN.NAME"
+msgid "Lichen"
+msgstr "Zuzmó"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMBER.DESCRIPTION"
+msgid "Organic wood material."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMBER.NAME"
+msgid "Lumber"
+msgstr "Fa"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMINITE.DESCRIPTION"
+msgid "todo"
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMINITE.NAME"
+msgid "Luminite"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMINITEGAS.DESCRIPTION"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMINITEGAS.NAME"
+msgid "Luminite Gas"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMINITEMOLTEN.DESCRIPTION"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_LUMINITEMOLTEN.NAME"
+msgid "Molten Luminite"
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKEL.DESCRIPTION"
+msgid "TODO"
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKEL.NAME"
+msgid "Nickel"
+msgstr "Nikkel"
+
+#, fuzzy
+#| msgid ""
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKELGAS.DESCRIPTION"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKELGAS.NAME"
+msgid "Nickel Gas"
+msgstr "Nikkel Gáz"
+
+#, fuzzy
+#| msgid ""
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKELMOLTEN.DESCRIPTION"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKELMOLTEN.NAME"
+msgid "Molten Nickel"
+msgstr "Olvadt Nikkel"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKELORE.DESCRIPTION"
+msgid ""
+"Pentlandite is an iron-nickel sulfide with the chemical formula (Fe,"
+"Ni)<sub>9</sub>S<sub>8</sub>."
+msgstr ""
+"A pendlandit egy vas-szulfát, a kémiai formulája (Fe,Ni)<sub>9</"
+"sub>S<sub>8</sub>.."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_NICKELORE.NAME"
+msgid "Nickel Ore"
+msgstr "Nikkel Érc"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_POWERJUICE.DESCRIPTION"
+msgid "Tasty and refreshing."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_POWERJUICE.NAME"
+msgid "Power Mix Juice"
+msgstr "Erőlé"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_PUMPKINJUICE.DESCRIPTION"
+msgid "Tasty and refreshing."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_PUMPKINJUICE.NAME"
+msgid "Pumpkin Juice"
+msgstr "Sütőtöklé"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_THERMALPASTE.DESCRIPTION"
+msgid "..."
+msgstr ""
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_THERMALPASTE.NAME"
+msgid "Thermal Paste"
+msgstr "Hőpaszta"
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_TRASH.DESCRIPTION"
+msgid "Various discarded items and materials."
+msgstr "Különböző tárgyak és anyagok."
+
+#
+msgctxt "Tundra.STRINGS.ELEMENTS.TUNDRA_TRASH.NAME"
+msgid "Trash"
+msgstr "Hulladék"

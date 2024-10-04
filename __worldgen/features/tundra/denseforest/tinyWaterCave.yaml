@@ -1,0 +1,21 @@
+tags:
+  - Wet
+  - AllowExceedNodeBorders
+shape: Circle
+borders:
+  - 1
+blobSize:
+  min: 2
+  max: 3
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: HorizontalSlice
+    choices:
+      - element: ContaminatedOxygen
+        weight: 1.0
+      - element: Water
+        weight: 2.0
+  RoomBorderChoices0:
+    choices:
+      - element: Tundra_Lumber
+        weight: 1.0

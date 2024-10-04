@@ -1,0 +1,31 @@
+# drops various random items on dig
+# check the matching data/items entry for how that's accomplished
+elements:
+  - elementId: Tundra_Trash
+    name: Trash
+    descriptionText: Various discarded items and materials.
+    color: 1bccd7
+    audio:
+      copyElement: Glass
+    specificHeatCapacity: 0.84
+    thermalConductivity: 1.11
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1426.85C
+    highTempTransitionTarget: Magma
+    defaultTemperature: 24C
+    defaultMass: 20
+    maxMass: 50
+    hardness: 100
+    molarMass: 25
+    lightAbsorptionFactor: 0.1
+    radiationAbsorptionFactor: 0.65
+    radiationPer1000Mass: 0
+    materialCategory: Tundra_TrashCategory
+    tags:
+    - BuildableAny
+    - Unstable
+    buildMenuSort: 5
+    state: Solid

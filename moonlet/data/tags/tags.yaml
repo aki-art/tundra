@@ -1,0 +1,30 @@
+tags:
+  # NICKEL
+  - id: Solids_NickelOre
+    name: "Nickel Ore"
+    desc: TODO
+
+  - id: Solids_Nickel
+    name: "Nickel"
+    desc: TODO
+
+  - id: Liquids_Nickel
+    name: "Molten Nickel"
+    desc: TODO
+
+  - id: Gases_Nickel
+    name: "Nickel Gas"
+    desc: TODO
+
+  # ARGON
+  - id: Solids_Argon
+    name: "Solid Argon"
+    desc: TODO
+
+  - id: Liquids_Argon
+    name: "Liquid Argon"
+    desc: TODO
+
+  - id: Gases_Argon
+    name: "Argon"
+    desc: TODO

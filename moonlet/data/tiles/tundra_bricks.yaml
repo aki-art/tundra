@@ -1,0 +1,38 @@
+id: Tundra_Bricks
+name: Grey Bricks
+effectDescription: ...
+description: ...
+
+materials:
+  - material: BuildableRaw
+    mass: 200
+
+category: Base
+subCategory: tiles
+
+walkSpeedModifier: 1.25
+insulationMultiplier: 1.0
+strength: 1.1
+blockAir: true
+blockLiquid: true
+transparent: false
+shiny: false
+
+# used for UI
+animation:
+  file: tundra_bricks_kanim
+
+topsLayout: Tile
+
+# shineColor: FF0000 # used for shiny effect
+
+# == TEXTURES ==
+# textures are looked up automatically from assets/textures/tiles by matching ID, but can be overridden here
+
+# texture: tiles/tundra_bricks.png
+# specularTexture: tiles/tundra_bricks_specular.png
+# placeTexture: tiles/tundra_bricks_place.png
+
+# topsTexture: tiles/tundra_bricks_tops.png
+# topsSpecularTexture: tiles/tundra_bricks_specular.png
+# topsPlaceTexture: tiles/tundra_bricks_tops_place.png

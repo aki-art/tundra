@@ -1,0 +1,37 @@
+add:
+  - id: TundraCold
+    name: Tundra
+    icon: tundra_spice_chill
+    description: > 
+      A very cold and unforgiving world.
+    utilityDescription: Utility description of Tundra
+
+  - id: TundraForest
+    name: Dense Forest
+    description: > 
+      Dense forest description.
+    utilityDescription: Utility description of Forests
+
+  - id: TundraToxic
+    name: Trash Pit
+    description: > 
+      description.
+    utilityDescription: Utility description
+
+  - id: TundraIcy
+    name: Icy Caverns
+    description: > 
+      description.
+    utilityDescription: Utility description
+
+  - id: TundraSurface
+    name: Cobalt Crust
+    description: > 
+      description.
+    utilityDescription: Utility description
+
+  - id: TundraGlass
+    name: Glass Lakes
+    description: > 
+      description.
+    utilityDescription: Utility description

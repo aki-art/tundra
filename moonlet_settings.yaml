@@ -1,0 +1,20 @@
+# This file must be included in your mods root directory
+
+# log additional information to the game log.
+# recommended to enable while developing, but disable when releasing to Steam Workshop
+debugLogging: true
+
+# Generate a template.pot file in mods/strings_templates
+generateTranslationsTemplate: true
+
+# Load translation files from here. en.po is also loaded for english
+translationsPath: moonlet/translations
+
+# Load data files from here. These are the yaml files with content in them
+dataPath: moonlet/data
+
+# Load assets from here, such as sprites, textures, sounds
+assetsPath: moonlet/assets
+
+# Type target assembly qualified name to overload strings to. Only relevant if you have a C# dll with a STRING-s class.
+# overloadTranslations: Tundra.STRINGS, Tundra

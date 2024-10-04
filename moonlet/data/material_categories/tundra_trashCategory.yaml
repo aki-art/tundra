@@ -1,0 +1,28 @@
+# material Categories get added to storages as catgories
+# use this if you add new elements or items not fitting into anything already
+
+# id: the id of this material category
+# name: default display name
+# addTo: add to these default storage filters. 
+#   - NOT_EDIBLE_SOLIDS: default storage, compactor, conveyors, etc.
+#   - LIQUIDS: filterable liquids
+#   - FOOD: food box / fridge, Edible, Medicine
+#   - DEHYDRATED: dehydrated
+#   - GASES: filterable gases (Breathable / Unbreathable)
+#   - PAYLOADS: Railgun Payload
+#   - BAGGABLE_CREATURES: creature droppoff point
+#   - SWIMMING_CREATURES: fish release
+#   - STORAGE_LOCKERS_STANDARD: Standard storage filter
+#   - SPECIAL_STORAGE: special storage (eggs, sublimators, clothes)
+#   - SOLID_TRANSFER_ARM_CONVEYABLE: # auto sweeper can see it
+
+categories:
+  - id: Tundra_TrashCategory
+    name: Waste Materials
+    addTo: 
+    - STORAGE_LOCKERS_STANDARD
+    - NOT_EDIBLE_SOLIDS
+    - SOLID_TRANSFER_ARM_CONVEYABLE
+    mod:
+      RomenH_DumpingSign:
+        iconKAnim: tundra_dumpingsign_trashcan_kanim # use this icon for Dumping Sign mods category entries

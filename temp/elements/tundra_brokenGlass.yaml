@@ -1,0 +1,34 @@
+elements:
+  - elementId: BrokenGlass
+    name: Broken Glass
+    descriptionText: Shards of sharp glass pieces.
+    color: 1bccd7
+    specularTexture: brokenglass_spec
+    specularColor: FFFFFF
+    audio:
+      copyElement: Glass
+    specificHeatCapacity: 0.84
+    thermalConductivity: 1.11
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1700
+    highTempTransitionTarget: MoltenGlass
+    defaultTemperature: 300
+    defaultMass: 600
+    maxMass: 1600
+    hardness: 2
+    molarMass: 25
+    lightAbsorptionFactor: 0.1
+    radiationAbsorptionFactor: 0.65
+    radiationPer1000Mass: 0
+    materialCategory: Tundra_TrashCategory
+    tags:
+    - BuildableAny
+    - Unstable
+    buildMenuSort: 5
+    state: Solid
+    duplicantEffects:
+      walkedOn:
+        id: Tundra_ToxicSludgeSteppedIn 

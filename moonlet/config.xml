@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML>
+    <Box>
+        <Toggle name="boots" label="Boots" value="false" />
+        <Toggle name="helmet" label="Helmet" value="false" />
+        <Toggle name="cloak" label="Cloak of invisibility" value="false"/>
+    </Box>
+    <Box>
+        <Button name="cancel" text="Cancel" />
+        <Button name="ok" text="OK" />
+    </Box>
+</UXML>

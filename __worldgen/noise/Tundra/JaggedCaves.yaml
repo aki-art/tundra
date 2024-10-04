@@ -1,0 +1,158 @@
+settings:
+  zoom: 0.100000001
+  normalise: false
+  seamless: false
+  lowerBound:
+    X: 2
+    Y: 2
+  upperBound:
+    X: 4
+    Y: 4
+  name: Untitled
+  pos:
+    X: 0
+    Y: 0
+links:
+- target:
+    type: Filter
+    name: RidgedMultiFractal_zub/GWeb
+  source0:
+    type: Primitive
+    name: SimplexPerlin_RyU7DY0L
+- target:
+    type: Filter
+    name: Voronoi_sDG4aqp5
+  source0:
+    type: Modifier
+    name: Scale2D_F7/KsMpQ
+- target:
+    type: Modifier
+    name: Scale2D_F7/KsMpQ
+  source0:
+    type: Filter
+    name: RidgedMultiFractal_zub/GWeb
+- target:
+    type: Modifier
+    name: Abs_8jHocHBs
+  source0:
+    type: Combiner
+    name: Add_sKQnOOwZ
+- target:
+    type: Modifier
+    name: Scale2D_u7dY+lgK
+  source0:
+    type: Modifier
+    name: Abs_8jHocHBs
+- target:
+    type: Combiner
+    name: Add_WyuWojeE
+  source0:
+    type: Modifier
+    name: Scale2D_F7/KsMpQ
+  source1:
+    type: Filter
+    name: Voronoi_sDG4aqp5
+- target:
+    type: Combiner
+    name: Add_sKQnOOwZ
+  source0:
+    type: Combiner
+    name: Add_WyuWojeE
+  source1:
+    type: Primitive
+    name: Constant_yO0+9fSt
+- target:
+    type: Terminator
+    name: TERMINATOR
+  source0:
+    type: Modifier
+    name: Scale2D_u7dY+lgK
+primitives:
+  SimplexPerlin_RyU7DY0L:
+    primative: SimplexPerlin
+    quality: Standard
+    seed: 0
+    offset: 1
+    name: SimplexPerlin_RyU7DY0L
+    pos:
+      X: 115.66666666666652
+      Y: 266.04000000000002
+  Constant_yO0+9fSt:
+    primative: Constant
+    quality: Fast
+    seed: 0
+    offset: -0.5
+    name: Constant_yO0+9fSt
+    pos:
+      X: 1448.6666666666665
+      Y: 1030.04
+filters:
+  RidgedMultiFractal_zub/GWeb:
+    filter: RidgedMultiFractal
+    frequency: 3
+    lacunarity: 3
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: RidgedMultiFractal_zub/GWeb
+    pos:
+      X: 417.66666666666652
+      Y: 247.03999999999999
+  Voronoi_sDG4aqp5:
+    filter: Voronoi
+    frequency: 1
+    lacunarity: 3
+    octaves: 10
+    offset: 1
+    gain: 0
+    exponent: 1
+    name: Voronoi_sDG4aqp5
+    pos:
+      X: 1065.6666666666665
+      Y: 955.03999999999996
+transformers: {}
+selectors: {}
+modifiers:
+  Scale2D_F7/KsMpQ:
+    modifyType: Scale2d
+    scale2d:
+      X: 0.200000003
+      Y: 0.200000003
+    name: Scale2D_F7/KsMpQ
+    pos:
+      X: 799.66666666666652
+      Y: 593.03999999999996
+  Abs_8jHocHBs:
+    modifyType: Abs
+    scale2d:
+      X: 0
+      Y: 0
+    name: Abs_8jHocHBs
+    pos:
+      X: 1932.6666666666665
+      Y: 869.03999999999996
+  Scale2D_u7dY+lgK:
+    modifyType: Scale2d
+    scale2d:
+      X: 1
+      Y: 1.5
+    name: Scale2D_u7dY+lgK
+    pos:
+      X: 2245.6666666666665
+      Y: 925.03999999999996
+combiners:
+  Add_WyuWojeE:
+    combineType: Add
+    name: Add_WyuWojeE
+    pos:
+      X: 1365.6666666666665
+      Y: 640.03999999999996
+  Add_sKQnOOwZ:
+    combineType: Add
+    name: Add_sKQnOOwZ
+    pos:
+      X: 1610.6666666666665
+      Y: 762.03999999999996
+floats: {}
+controlpoints: {}

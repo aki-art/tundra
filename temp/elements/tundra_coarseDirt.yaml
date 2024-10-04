@@ -1,0 +1,25 @@
+elements:
+  - elementId: Tundra_CoarseDirt
+    name: Coarse Dirt
+    descriptionText: Rough and uneven mix of dirt and pebbles.
+    specificHeatCapacity: 1.48
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 600
+    highTempTransitionTarget: Sand
+    defaultTemperature: 290
+    defaultMass: 1840
+    maxMass: 1840
+    hardness: 50
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.75
+    radiationPer1000Mass: 0
+    materialCategory: Other
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    state: Solid

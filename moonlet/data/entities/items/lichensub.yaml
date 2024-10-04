@@ -1,0 +1,17 @@
+id: Tundra_LichenSub
+name: Lichen Sub
+description: A Duplicant's favorite meal while watching YouDupe videos on the Research Station screens.
+
+width: 1
+height: 0.5
+
+animation:
+  file: tundra_lichensub_kanim
+
+components:
+  - type: Edible
+    data:
+      kcalPerUnit: 1400 
+      quality: 3
+      effects:
+      - Tundra_MinorOxygenBuff

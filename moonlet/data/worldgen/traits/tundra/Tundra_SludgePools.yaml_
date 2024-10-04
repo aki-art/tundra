@@ -1,0 +1,10 @@
+name: Sludge Pools
+description: Lakes of Toxic Sludge are scattered around.
+colorHex: 8bcc60
+icon: traitIcon_TundraTrashPits
+
+traitTags:
+  - Wet
+
+globalFeatureMods:
+  features/tundra/traits/TrashCave: 12

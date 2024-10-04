@@ -1,0 +1,29 @@
+biomeNoise: noise/Tundra/JaggedCaves
+
+temperatureRange: Mild
+
+borderOverride: TundraDirty
+borderOverridePriority: 10
+
+pdWeight: .5
+minChildCount: 6
+density:
+  min: 15
+  max: 25
+avoidRadius: 30
+sampleBehaviour: PoissonDisk
+
+biomes:
+  - name: biomes/TundraTundra/Metallic
+    tags:
+      - Tundra_LotsOfMuckroot
+      - Tundra_BlueFlower
+
+tags:
+  - IgnoreCaveOverride
+  - NoGlobalFeatureSpawning
+
+features:
+  - type: features/tundra/tundra/MetalCavern # small cave lined with nickel ore and some lichen
+
+zoneType: Tundra_Frozen

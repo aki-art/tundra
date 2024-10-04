@@ -1,0 +1,7 @@
+add:
+  Tundra_Chippy:
+    min: 16C
+    max: 19C
+  Tundra_Brimstone:
+    min: 80C
+    max: 115C

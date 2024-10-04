@@ -1,0 +1,6 @@
+animation: 
+  file: tundra_frozen_earth_kanim
+  animation: "idle_loop"
+altitude: 0.8
+speed: 1
+scale: 1

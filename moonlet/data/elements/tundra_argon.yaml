@@ -1,0 +1,73 @@
+elements:
+  - elementId: Tundra_Argon
+    name: Argon
+    descriptionText: Argon is a chemical element with the symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas.[7] Argon is the third-most abundant gas in Earth's atmosphere.
+    color: 0f5002
+    specificHeatCapacity: 0.846
+    thermalConductivity: 0.0146
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: -185.848C
+    lowTempTransitionTarget: LiquidArgon
+    defaultTemperature: 300
+    defaultPressure: 139
+    molarMass: 44.01
+    toxicity: 0.0001
+    lightAbsorptionFactor: 0.1
+    radiationAbsorptionFactor: 8%
+    radiationPer1000Mass: 0
+    materialCategory: Unbreathable
+    state: Gas
+
+  - elementId: Tundra_LiquidArgon
+    name: Argon
+    descriptionText: Argon is a chemical element with the symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas.[7] Argon is the third-most abundant gas in Earth's atmosphere.
+    color: 0f5002
+    maxMass: 2000
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 0.846
+    thermalConductivity: 1.46
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: -189.34C
+    highTemp: 185.848C
+    lowTempTransitionTarget: SolidArgon
+    highTempTransitionTarget: Argon
+    defaultTemperature: 220
+    defaultMass: 600
+    molarMass: 44.01
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.8
+    radiationPer1000Mass: 0
+    state: Liquid
+    
+  - elementId: Tundra_SolidArgon
+    name: Solid Argon
+    descriptionText: Argon is a chemical element with the symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas.[7] Argon is the third-most abundant gas in Earth's atmosphere.
+    color: 0f5002
+    specificHeatCapacity: 0.846
+    thermalConductivity: 1.46
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.6
+    highTemp: -189.34
+    highTempTransitionTarget: LiquidArgon
+    defaultTemperature: 192.15
+    defaultMass: 600
+    maxMass: 2000
+    hardness: 2
+    molarMass: 44.01
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.8
+    radiationPer1000Mass: 0
+    materialCategory: Liquifiable
+    buildMenuSort: 1
+    state: Solid

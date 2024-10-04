@@ -1,0 +1,37 @@
+name: Tundra
+description: TODO
+disableWorldTraits: true
+asteroidIcon: asteroid_vanilla_mediumforestywasteland_kanim
+
+worldTraitScale: 1 # Adjust with worldSize. Traits are tuned to base game world sizes.
+worldsize:
+  X: 64
+  Y: 64
+layoutMethod: PowerTree
+
+defaultsOverrides:
+  data:
+    OverworldAvoidRadius: 5
+    OverworldSampleBehaviour: PoissonDisk
+    OverworldDensityMin: 16
+    OverworldDensityMax: 16
+    DrawWorldBorder: true
+    DrawWorldBorderForce: true
+    WorldBorderThickness: 1
+    WorldBorderRange: 0
+    OverworldMinNodes: 1
+  startingWorldElements: [] # remove the algae check
+
+# List all the subworld files to load
+subworldFiles:
+  - name: subworlds/subworldtest
+    minCount: 1
+  - name: subworlds/subworldtest2
+    minCount: 1
+
+unknownCellsAllowedSubworlds: 
+  - tagcommand: Default
+    command: Replace
+    subworldNames:
+      - subworlds/subworldtest
+      - subworlds/subworldtest2
